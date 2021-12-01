@@ -1,48 +1,46 @@
 {
-  "name": "module",
-  "title": "New Module",
-  "description": "",
-  "version": "This is auto replaced",
-  "library": "false",
-  "manifestPlusVersion": "1.0.0",
-  "minimumCoreVersion": "0.8.8",
-  "compatibleCoreVersion": "0.8.8",
-  "authors": [
-    {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
-    }
-  ],
-  "dependencies": [
+  "name": "swade-it-helper",
+  "title": "SWADE Italian Localization Helper",
+  "description": "A module to help with SWADE translations.",
+  "version": "0.0.13",
+  "system": ["swade"],
+  "minimumCoreVersion" : "0.8.1",
+  "compatibleCoreVersion":"0.8.9",
 
-  ],
-  "conflicts": [
-    
-  ],
-  "esmodules": [
-    "/scripts/module.js"
-  ],
-  "scripts": [
-    "/scripts/lib/lib.js"
-  ],
-  "styles": [
-    "/styles/module.css"
-  ],
-  "languages": [
+  "dependencies": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
+      "name": "babele",
+      "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
+      "version": "2.0.7"
+    },
+    {
+      "name": "swade-it",
+      "manifest": "https://gitlab.com/dsuppo/swade-it/raw/master/it-IT/module.json",
+      "version": "1.0.8"
     }
   ],
-  "url": "This is auto replaced",
-  "manifest": "This is auto replaced",
-  "download": "This is auto replaced",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+
+  "author": "dsuppo",
+  "esmodules": ["babele-register.js"],
+  "scripts": ["localize.js", "scripts/utils.js"],
+  "styles": [],
+  "packs": [{
+    "label": "Localize Macros",
+    "name": "localize-macros",
+    "entity": "Macro",
+    "path": "packs/localize-macros.db",
+    "system": "swade",
+    "package": "swade-it-helper"
+  }],
+
+  "languages": [{
+    "lang": "it",
+    "name": "Italian",
+    "path": "it.json"
+  }],
+  "url": "https://github.com/DanieleSuppo/swade-it-helper",
+  "manifest": "https://github.com/DanieleSuppo/swade-it-helper/releases/download/latest/module.json",
+  "download": "https://github.com/DanieleSuppo/swade-it-helper/releases/download/0.0.1/module.zip",
+  "coreTranslation": false
+
 }

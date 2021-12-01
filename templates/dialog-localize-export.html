@@ -1,0 +1,30 @@
+<form class="toolbox flexcol" autocomplete="off">
+  <div class="tab active datatoolbox">
+    <p class="notes">{{localize "LOCALIZE.notesExport"}}</p>
+
+     <div class="form-group">
+      <label>{{localize "LOCALIZE.compendiumNameExport"}}</label>
+      <div class="form-fields">
+        <select name="compendium" class="compendium">
+          {{#each compendium}}
+          <option  type="text" name="compendium" value="{{this.metadata.package}}.{{this.metadata.name}}">{{this.metadata.label}} ({{this.metadata.package}}) - {{this.metadata.entity}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+
+      <div class="form-group">
+          <label>{{localize "LOCALIZE.format"}}</label>
+          <div class="form-fields">
+              <label>
+                  <input  type="radio" name="format" value="csv">
+              </label>CSV</input>
+              <label>
+                  <input  type="radio" name="format" value="json">
+              </label>JSON</input>
+          </div>
+      </div>
+
+
+  </div>
+</form>

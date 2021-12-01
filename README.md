@@ -66,6 +66,6 @@ Clicking "Save" in the bottom right will save the new version, which means that 
 
 # FoundryVTT Module
 
-Does something, probably
+swade-it-helper
 
 ## Changelog

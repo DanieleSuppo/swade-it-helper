@@ -1,0 +1,11 @@
+{
+  "LOCALIZE.name": "Localize",
+  "LOCALIZE.notes": "Seleziona il file da importare e il compendio da aggiornare. Ricorda che puoi aggiornare solo Compendi Sbloccati",
+  "LOCALIZE.sourceFile": "File da importare",
+  "LOCALIZE.browseFile": "Seleziona file",
+  "LOCALIZE.compendiumName": "Compendio da aggiornare",
+  "LOCALIZE.import" : "Importa",
+  "LOCALIZE.cancel": "Annulla",
+  "LOCALIZE.importTitle": "Aggiorna Compendio da csv",
+  "LOCALIZE.processCompleted": "{count} {type} sono stati aggiornati!"
+}

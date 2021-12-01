@@ -1,0 +1,16 @@
+<form class="toolbox flexcol" autocomplete="off">
+  <div class="tab active datatoolbox">
+    <p class="notes">{{localize "LOCALIZE.translateNotes"}}</p>
+     <div class="form-group">
+      <label>{{localize "LOCALIZE.compendiumNameTranslate"}}</label>
+      <div class="form-fields">
+          <select name="compendium" class="compendium">
+          <option  type="text" name="compendium" value="actors">{{localize "LOCALIZE.Actors"}}</option>
+          {{#each compendium}}
+          <option  type="text" name="compendium" value="{{this.metadata.package}}.{{this.metadata.name}}">{{this.metadata.label}} ({{this.metadata.package}}) - {{this.metadata.entity}}</option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+  </div>
+</form>
