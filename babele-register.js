@@ -118,7 +118,7 @@ Hooks.once('init', () => {
 	if(typeof Babele !== 'undefined') {
 
 		Babele.get().register({
-			module: 'swade-localize-it',
+			module: 'swade-it-helper',
 			lang: 'it',
 			dir: 'compendium'
 		});
