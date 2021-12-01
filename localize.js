@@ -4,14 +4,14 @@
 const itemInserted = [];
 
 function dtShowExport() {
-    renderTemplate("modules/swade-localize-it/templates/dialog-localize-export.html", {
+    renderTemplate("modules/swade-it-helper/templates/dialog-localize-export.html", {
         compendium:  Array.from(game.packs.filter(p => p.locked === false))
     }).then(html => { (new GenerateCompendiumDialogExport(null, {html: html})).render(true); }
     );
 }
 
 function dtShowImport() {
-    renderTemplate("modules/swade-localize-it/templates/dialog-localize.html", {
+    renderTemplate("modules/swade-it-helper/templates/dialog-localize.html", {
         csv: game.settings.get("localize", "csv"),
         compendium:  Array.from(game.packs.filter(p => p.locked === false))
     }).then(html => { (new GenerateCompendiumDialogImport(null, {html: html})).render(true); }
@@ -19,7 +19,7 @@ function dtShowImport() {
 }
 
 function dtShowTranslation() {
-    renderTemplate("modules/swade-localize-it/templates/dialog-localize-translation.html", {
+    renderTemplate("modules/swade-it-helper/templates/dialog-localize-translation.html", {
         csv: game.settings.get("localize", "csv"),
         compendium:  Array.from(game.packs.filter(p => p.locked === false))
     }).then(html => { (new GenerateCompendiumDialogTranslation(null, {html: html})).render(true); }
@@ -29,11 +29,11 @@ function dtShowTranslation() {
 Hooks.once("init", () => {
 
     loadTemplates([
-        "modules/swade-localize-it/templates/dialog-localize.html",
-        "modules/swade-localize-it/templates/dialog-localize-export.html",
-        "modules/swade-localize-it/templates/dialog-localize-translation.html"
+        "modules/swade-it-helper/templates/dialog-localize.html",
+        "modules/swade-it-helper/templates/dialog-localize-export.html",
+        "modules/swade-it-helper/templates/dialog-localize-translation.html"
     ]);
-    game.settings.register("localize", "csv", { scope: "world", config: false, type: String, default: "modules/swade-localize-it/csv/actors.csv" });
+    game.settings.register("localize", "csv", { scope: "world", config: false, type: String, default: "modules/swade-it-helper/csv/actors.csv" });
 
 });
 
@@ -61,7 +61,7 @@ class GenerateCompendiumDialogImport extends Dialog {
             default: "generate",
             close: (dialog) => {
                 //console.log(dialog);
-                }
+            }
         });
     }
 
@@ -319,7 +319,7 @@ class GenerateCompendiumDialogTranslation extends Dialog {
             await CompendiumCollection.createCompendium(metadata);
         }
 
-       let compendiumKey = html.find('select[name="compendium"]').val();
+        let compendiumKey = html.find('select[name="compendium"]').val();
         let content;
 
         if(compendiumKey === 'actors') {
@@ -333,16 +333,17 @@ class GenerateCompendiumDialogTranslation extends Dialog {
         let translateItems = async(actor) => {
 
             const itemsToUpdate = [];
+
             for (let i = 0; i < actor.getEmbeddedCollection('Item').contents.length; i++) {
                 const item = actor.getEmbeddedCollection('Item').contents[i];
                 const translatedData = await translateItem(item)
-                if(translatedData !== null) {
-                    itemsToUpdate.push( mergeObject(translatedData, { _id: item.id, 'flags.loc.translated': true }));
+                if(translatedData !== null && translatedData !== undefined) {
+                    itemsToUpdate.push( mergeObject(translatedData, { _id: item.id ,'flags.loc.translated': true }));
                 }
             }
 
             if(itemsToUpdate.length > 0) {
-                console.log(itemsToUpdate);
+                console.log(itemsToUpdate)
                 await actor.updateEmbeddedDocuments("Item", itemsToUpdate);
             }
         }
@@ -366,6 +367,8 @@ class GenerateCompendiumDialogTranslation extends Dialog {
                 patchedItem = await translateFromPack(item, ["skills"], ['description']); //TODO make the skip multilevel
             } else if (item.data.type === "power") {
                 patchedItem = await translateFromPack(item, ["swade-powers"]);
+            } else if (item.data.type === "ability") {
+                patchedItem = await translateFromPack(item, ["swade-specialabilities"]);
             }
             return patchedItem;
         }
@@ -376,6 +379,7 @@ class GenerateCompendiumDialogTranslation extends Dialog {
                 && entity.items !== undefined
                 && entity.items !== null
             ) {
+
                 translateItems(entity)
             }
             else {
@@ -451,8 +455,8 @@ function isTranslatable(key, value) {
             && !key.includes('path')
             && !key.includes('name')
         ) ||  key.includes('flags.exportSource')
-         ||  key.includes('flags.importInfo')
-         ||  key.includes('items.')
+        ||  key.includes('flags.importInfo')
+        ||  key.includes('items.')
         || value === true
 
     )
@@ -481,11 +485,11 @@ async function translateFromPack(item, packs, skip = []) {
         let foundItem = (await missingTranslationPack.getDocuments()).find(el => (el.name === item.name && el.type === item.type));
         //Search the item here
         if (foundItem === undefined || foundItem === null) {
-           //See if I already inserted it
+            //See if I already inserted it
             if(itemInserted[hash] !== 1){
                 itemInserted[hash] = 1;
                 //TODO if not present add it
-                return Item.create(item.data, {pack: 'world.missing-translations'});
+                Item.create(item.data, {pack: 'world.missing-translations'});
             }
         }
     }
