@@ -1,6 +1,10 @@
 const skillDict = {
 	'Shooting' : 'Sparare',
-	'Fighting' : 'Combattere'
+	'Fighting' : 'Combattere',
+	'Piloting' : 'Pilotare',
+	'Riding' : 'Cavalcare',
+	'Boating' : 'Navigare',
+	'Driving' : 'Guidare'
 }
 
 const folderDict = {
@@ -56,7 +60,8 @@ function parseSkill(value){
 	if(skillDict[value] !== null) {
 		return skillDict[value];
 	}
-	else return value;
+	console.log(value + " not found, please add to skillDict");
+	return value;
 }
 
 function parseAction(value, translations, data){
@@ -78,28 +83,20 @@ function parseAction(value, translations, data){
 	return value;
 }
 
-function parseName(value){
-	//Parse the translated compendiums to find a match
-	let item = {};
-	item['_id'] = value;
-	let pack = game.packs.find(pack => pack.translated && pack.hasTranslation(item));
-	if(pack) {
-		return pack.translate(item, true).name;
+function parseName(value, translations, data, tc) {
+	let pack = game.babele.packs.find(pack => pack.translated && pack.translations[data.name]);
+	if(pack && pack !== tc) {
+		return pack.translateField("name", data);
 	}
-	//Otherwise return current value
 	return value;
 }
 
-
-function parseRequirements(value, translations, data){
-	//Parse the translated compendiums to find a match
-	let item = {};
-	item['_id'] = data.name;
-	let pack = game.packs.find(pack => pack.translated && pack.hasTranslation(item));
-	if(pack) {
-		return pack.translate(item, true).data.requirements;
+function parseRequirements(value, translations, data, tc){
+	let pack = game.babele.packs.find(pack => pack.translated && pack.translations[data.name]);
+	if(pack && pack !== tc) {
+		console.log(pack);
+		return pack.translateField("requirements", data);
 	}
-	//Otherwise return current value
 	return value;
 }
 
@@ -123,12 +120,20 @@ Hooks.once('init', () => {
 			dir: 'compendium'
 		});
 
+
 		Babele.get().registerConverters({
 			"translateSkill": (value) => parseSkill(value),
-			"translateName": (value) => parseName(value),
-			"translateRequirements": (value, translations, data) => parseRequirements(value, translations, data),
-			"translateCfName": (value) => parseCfName(value),
+			"translateName": (value, translations, data, tc) => {
+				return parseName(value, translations, data, tc)
+			},
+			"translateRequirements": (value, translations, data, tc) => {
+				return parseRequirements(value, translations, data, tc)
+			},
+			"translateCfName": (value) => {
+				return parseCfName(value)
+			},
 			"translateAction": (value, translations, data) => parseAction(value, translations, data),
 		});
+
 	}
 });
