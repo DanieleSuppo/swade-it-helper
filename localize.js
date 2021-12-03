@@ -307,17 +307,6 @@ class GenerateCompendiumDialogTranslation extends Dialog {
     }
 
     async _generate(html) {
-        const missingTranslationPack = game.packs.get("world.missing-translations");
-        if(missingTranslationPack) {
-            //do something
-            console.log('pack found!');
-        }
-        else {
-            console.log('pack not found, let\'s create it');
-            //create the pack
-            const metadata = {name: "missing-translations", label: "Missing Translations", path: "packs/missing-translations.db", entity: 'Item'};
-            await CompendiumCollection.createCompendium(metadata);
-        }
 
         let compendiumKey = html.find('select[name="compendium"]').val();
         let content;
@@ -478,7 +467,20 @@ function isTranslatable(key, value) {
 async function translateFromPack(item, packs, skip = []) {
 
     //Search also in the pack we created
-    packs.push("missing-translations");
+    const itemType =  item.type.toLowerCase();
+    const missingTranslationPackCheck = game.packs.get("world.missing-translations-" + itemType);
+    if(missingTranslationPackCheck) {
+        //do something
+        console.log('pack found!');
+    }
+    else {
+        console.log('pack not found, let\'s create it');
+        //create the pack
+        const metadata = {name: "missing-translations-" + itemType, label: "Missing Translations " + itemType.capitalize(), path: "packs/missing-translations.db", entity: 'Item'};
+        await CompendiumCollection.createCompendium(metadata);
+    }
+
+    packs.push("missing-translations-" + itemType);
 
     for (let packName of packs) {
         let pack = game.babele.packs.find(pack => pack.translated && pack.translations[item.name] && pack.metadata.name == packName);
@@ -486,7 +488,8 @@ async function translateFromPack(item, packs, skip = []) {
             return pack.translate(item.data, true);
         }
     }
-    const missingTranslationPack = await game.packs.get("world.missing-translations");
+
+    const missingTranslationPack = game.packs.get("world.missing-translations-" + itemType);
     if(missingTranslationPack) {
         const hash = CryptUtil.md5(item.name + item.type + item.data.data.description);
         //do something
@@ -497,7 +500,7 @@ async function translateFromPack(item, packs, skip = []) {
             if(itemInserted[hash] !== 1){
                 itemInserted[hash] = 1;
                 //TODO if not present add it
-                Item.create(item.data, {pack: 'world.missing-translations'});
+                Item.create(item.data, {pack: "world.missing-translations-" + itemType});
             }
         }
     }

@@ -27,6 +27,8 @@ const folderDict = {
 	'Modern Firearms' : 'Armi da fuoco moderne', //TODO rivedi con pdf
 	'Personal Weapons' : 'Armi personali', //TODO rivedi con pdf
 	'Special Weapons' : 'Armi speciali', //TODO rivedi con pdf
+	'Bestiary' : 'Bestiario',
+	'Vehicles' : 'Veicoli',
 }
 
 const actionDict = {
