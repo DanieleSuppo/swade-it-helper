@@ -352,7 +352,15 @@ class GenerateCompendiumDialogTranslation extends Dialog {
 
             //TODO se armi convertire anche le azioni
             //Usa get / set flag
-            if (item.data.flags !== undefined && item.data.flags.loc !== undefined && item.data.flags.loc.translated) {
+            if ((item.data.flags !== undefined
+                    && item.data.flags.loc !== undefined
+                    && item.data.flags.loc.translated)
+                || (
+                    item.data.flags !== undefined
+                    && item.data.flags.babele !== undefined
+                    && item.data.flags.babele.translated === true
+                )
+            ) {
                 //console.log('item ' + item.name + ' already translated');
                 return null;
             }
