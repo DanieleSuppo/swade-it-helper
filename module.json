@@ -5,7 +5,7 @@
   "version": "0.0.13",
   "system": ["swade"],
   "minimumCoreVersion" : "0.8.1",
-  "compatibleCoreVersion":"0.8.9",
+  "compatibleCoreVersion":"9",
 
   "dependencies": [
     {
