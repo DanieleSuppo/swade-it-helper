@@ -431,7 +431,7 @@
         },
         "Giant Killer": {
             "name": "Ammazzagiganti",
-            "description": "<div class=\"swade-core\"><p>Più grossi sono e più è difficile ucciderli... almeno per gli altri. Il tuo eroe sa sfruttare i punti deboli dei nemici più grandi. Quando attacchi avversari la cui Taglia è maggiore della tua di almeno tre punti (vedi Taglia a pag. 224), aggiungi +1d6 danni. Un umano (Taglia 0) ottiene questo bonus contro creature con Taglia 3 o superiore.</p></div>",
+            "description": "<div class=\"swade-core\"><p>Più grossi sono e più è difficile ucciderli... almeno per gli altri. Il tuo eroe sa sfruttare i punti deboli dei nemici più grandi. </p><p>Quando attacchi avversari la cui Taglia è maggiore della tua di almeno tre punti (vedi Taglia a pag. 224), aggiungi +1d6 danni. Un umano (Taglia 0) ottiene questo bonus contro creature con Taglia 3 o superiore.</p></div>",
             "requirements": {
                 "value": "Veterano"
             }
