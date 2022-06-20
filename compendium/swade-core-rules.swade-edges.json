@@ -1,0 +1,993 @@
+{
+    "label": "SWADE Vantaggi",
+    "mapping": {
+        "name":  {
+            "path": "name",
+            "converter": "translateName"
+        },
+        "requirements": {
+            "path": "data.requirements",
+            "converter": "translateRequirements"
+        },
+        "cf_name": {
+            "path": "flags.cf.name",
+            "converter": "translateCfName"
+        },
+        "description": "data.description"
+    },
+    "entries": {
+        "Ace": {
+            "name": "Asso",
+            "description": "<div class=\"swade-core\"><p>Gli Assi sono quei piloti che sviluppano un'affinità speciale con il proprio veicolo.</p><p>Un Asso ignora due punti di penalità ai tiri di Guidare, Navigare e Pilotare. Può inoltre spendere i propri Benny per effettuare un tiro per Assorbire i danni subiti dal veicolo che sta guidando, utilizzando l'abilità di manovra appropriata per il veicolo al posto di Vigore. Per ogni successo e incremento ottenuto, nega una Ferita subita dal veicolo.</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+"
+            }
+        },
+        "Acrobat": {
+            "name": "Acrobata",
+            "description": "<div class=\"swade-core\"><p>Un Acrobata può ripetere gratuitamente un tiro di Atletica per un'azione che richieda equilibrio o movimenti acrobatici o per le prese in combattimento. Non è applicabile ai tiri per interrompere azioni, arrampicarsi, nuotare o scagliare.</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+, Atletica d8+"
+            }
+        },
+        "Alertness": {
+            "name": "Allerta",
+            "description": "<div class=\"swade-core\"><p>Poche cose sfuggono a questo eroe, che ottiene +2 ai tiri di Percezione per vedere, sentire o percepire il mondo intorno a sé.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Alertness (sensors).": {
+            "name": "Allerta (sensori).",
+            "description": "<p>Vedi SWADE p.46</p>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Ambidextrous": {
+            "name": "Ambidestro",
+            "description": "<div class=\"swade-core\"><p>L’eroe è abile con la mano sinistra quanto lo è con la destra, e ignora le penalità da <b>Mano Secondaria</b> (pag. 131).</p><p>Se brandisce un’arma per mano, un personaggio Ambidestro beneficia degli eventuali bonus alla Parata di entrambe le armi.</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+"
+            }
+        },
+        "Arcane Background": {
+            "name": "Background Arcano",
+            "description": "<div class=\"swade-core\"><p>L’esposizione a misteriose energie, lo studio delle arti arcane, un dono divino o proveniente da spiriti sovrannaturali, possono conferire al personaggio capacità e poteri straordinari. Il Capitolo Cinque descrive in dettaglio tutti i Background Arcani e le regole per utilizzarne i poteri.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Arcane Background (Gifted)": {
+            "name": "Background Arcano (Dono)",
+            "description": "<div class=\"swade-core\"><p>\n<ul>\n<li><b>ABILITÀ ARCANA</b>: Focus (Spirito)</li>\n<li><b>POTERI INIZIALI</b>: 1</li>\n<li><b>PUNTI POTERE</b>: 15</li>\n</ul><p>Il personaggio possiede una capacità innata la cui origine non è magica, né religiosa, né scientifica, né psionica. Potrebbe trattarsi di superpoteri non troppo potenti, di un dono divino, di una capacità di origine aliena, o di altro ancora. Spesso si tratta di qualcosa di molto inusuale, se non addirittura di unico, all'interno dell'ambientazione.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Arcane Background (Magic)": {
+            "name": "Background Arcano (Magia)",
+            "description": "<div class=\"swade-core\"><p>\n<ul>\n<li><b>ABILITÀ ARCANA</b>: Lanciare Incantesimi (Intelligenza)</li>\n<li><b>POTERI INIZIALI</b>: 3</li>\n<li><b>PUNTI POTERE</b>: 10</li>\n</ul><p>I maghi possono essere potenti stregoni o crudeli cultisti. I loro poteri sfruttano le energie sovrannaturali che impregnano il mondo nel quale vivono, e sono attivati tramite gesti, parole di potere o antiche rune.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Arcane Background (Miracles)": {
+            "name": "Background Arcano (Miracoli)",
+            "description": "<div class=\"swade-core\"><p>\n<ul>\n<li><b>ABILITÀ ARCANA</b>: Fede (Spirito)</li>\n<li><b>POTERI INIZIALI</b>: 3</li>\n<li><b>PUNTI POTERE</b>: 10</li>\n</ul><p>Coloro che sono in grado di invocare miracoli traggono il loro potere da qualche tipo di entità divina, inclusi gli dèi, la natura e gli spiriti. Per manifestare i propri poteri utilizzano di solito parole, preghiere o rituali prestabiliti.</p><p>I personaggi capaci di invocare miracoli sono i campioni della loro religione. Di solito possiedono Svantaggi associati al proprio ruolo religioso, come per esempio Giuramento o Responsabilità. Potrebbero inoltre avere il Vantaggio Contatti, riferito ad altri membri della loro religione, capaci di aiutarli nel momento in cui il favore divino dovesse abbandonarli.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Arcane Background (Psionics)": {
+            "name": "Background Arcano (Arti Psioniche)",
+            "description": "<div class=\"swade-core\"><p>\n<ul>\n<li><b>ABILITÀ ARCANA</b>: Arti Psioniche (Intelligenza)</li>\n<li><b>POTERI INIZIALI</b>: 3</li>\n<li><b>PUNTI POTERE</b>: 10</li>\n</ul><p>Gli psionici utilizzano la propria energia mentale per manipolare la materia, leggere il pensiero e compiere altri prodigi. Alcuni possono essere agenti al servizio di un governo, mentre altri potrebbero essere ricercati da quella stessa agenzia! Alcuni potrebbero avere impiegato anni ad addestrarsi, mentre altri potrebbero aver sviluppato i propri poteri in circostanze impreviste ed estreme.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Arcane Background (Weird Science)": {
+            "name": "Background Arcano (Scienza Folle)",
+            "description": "<div class=\"swade-core\"><p>\n<ul>\n<li><b>ABILITÀ ARCANA</b>: Scienza Folle (Intelligenza)</li>\n<li><b>POTERI INIZIALI</b>: 2</li>\n<li><b>PUNTI POTERE</b>: 15</li>\n</ul><p>La Scienza Folle rappresenta la creazione di bizzarri, potenti dispositivi al di là del livello tecnologico dell'ambientazione. Potrebbe essere possibile grazie a super carburanti, tecnologie aliene, o rare menti geniali che vanno oltre i limiti della scienza.</p><p>Negli <b>Aspetti</b> (pag. 190) di ciascun potere, il giocatore deve sempre specificare a quale oggetto sono associati. Il potere esplosione potrebbe manifestarsi per mezzo di una sorta di lanciafiamme, mentre guarigione potrebbe essere un elisir da ingerire.</p><p>Per attivare i propri poteri, lo scienziato deve avere con sé tali oggetti (ma vedi Improvvisare, sotto).</p><p>Le creazioni del personaggio non possono essere attivate da altri personaggi, magari perché il loro utilizzo è troppo complesso, o perché il dispositivo è calibrato, dosato o regolato sui parametri dell'inventore, o semplicemente perché funziona solo nelle mani del padrone. Per quanto strano possa sembrare, solo l'inventore riesce ad attivare le proprie invenzioni.</p><p>Se lo scienziato desidera creare oggetti per gli altri, può comunque farlo, attraverso gli <b>Oggetti Arcani</b> (pag. 194) e con il Vantaggio <b>Artefice</b> (pag. 57).</p><p>L'inventore può sempre e comunque utilizzare le proprie invenzioni sugli altri. Può somministrare una dose del proprio elisir miracoloso, per esempio, tirando normalmente per attivare il potere. Se però consegna la fiala dell'elisir a un altro personaggio affinché questi lo utilizzi in seguito, l'elisir non avrà alcun effetto.</p><p><b>Improvvisare</b>: Gli Scienziati Folli devono attivare i propri poteri per mezzo dell'oggetto a cui sono stati assegnati, ma se necessario possono improvvisare un dispositivo alternativo con una penalità di -2, purché il GM lo consenta, in base alla situazione e all'ambientazione.</p><p><i><b>Esempio</b>: Gabe è stato catturato da una razza di alieni malvagi e tutto il suo equipaggiamento gli è stato sottratto. Viene rinchiuso in una cella e decide di smontarne la lampada e utilizzarne l'alimentazione per Improvvisare una scarica. Il GM acconsente, ma decide che funzionerà una sola volta perché la lampada verrà distrutta e l'impianto della cella andrà in cortocircuito.</i></p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Arcane Resistance": {
+            "name": "Resistenza Arcana",
+            "description": "<div class=\"swade-core\"><p>Che si tratti di un dono di natura, un retaggio personale o l’esito di un addestramento specifico, la magia e tutte le energie sovrannaturali hanno poco potere contro questo personaggio.</p><p>I tiri di tutte le abilità arcane contro il personaggio subiscono una penalità di -2 (anche quando utilizzate dagli alleati!), e i danni magici sono ridotti di 2.</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        },
+        "Aristocrat": {
+            "name": "Aristocratico",
+            "description": "<div class=\"swade-core\"><p>Quest’individuo è nato in una posizione privilegiata, o l’ha raggiunta nel corso della propria vita. Potrebbe disporre di grandi ricchezze (per le quali esistono i Vantaggi Ricco e Ricco Sfondato), ma di sicuro fa parte della crema della società della propria ambientazione.</p><p>Gli Aristocratici aggiungono +2 ai tiri di Persuasione quando utilizzano <b>Contattare Conoscenze</b> (pag. 147) presso l’élite locale, i capitani d’industria, i nobili e ogni altro genere di categoria sociale elevata.</p><p>Aggiungono inoltre +2 ai tiri di Conoscenze Comuni per conoscere l’etichetta delle classi superiori, gli alberi genealogici, l’araldica o i pettegolezzi che riguardino altre persone altolocate.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Artificer": {
+            "name": "Artefice",
+            "description": "<div class=\"swade-core\"><p>Coloro che manipolano le forze sovrannaturali possono imparare a imbrigliarle all'interno di oggetti speciali, creando armi incantate, pozioni di guarigione, o reliquie benedette dalle potenze divine. Gli Artificieri possono creare oggetti incredibili utilizzando il sistema degli <b>Oggetti Arcani</b> spiegato a pag. 194.</p></div>",
+            "requirements": {
+                "value": "Navigato, Background Arcano (Qualsiasi)"
+            }
+        },
+        "Assassin": {
+            "name": "Assassino",
+            "description": "<p>Vedi SWADE p.60</p>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+, Combattere d6+, Furtività d8+"
+            }
+        },
+        "Attractive": {
+            "name": "Attraente",
+            "description": "<div class=\"swade-core\"><p>Non è un segreto che le persone belle ottengono più facilmente ciò che vogliono. Il tuo personaggio aggiunge +1 ai tiri di Esibirsi e Persuasione se rientra nel tipo di persona da cui è attratto il bersaglio (genere, sesso, specie, ecc).</p></div>",
+            "requirements": {
+                "value": "Principiante, Vigore d6+"
+            }
+        },
+        "Beast Bond": {
+            "name": "Legame Animale",
+            "description": "<div class=\"swade-core\"><p>Alcuni individui riescono a stabilire un legame straordinario con gli animali che li accompagnano. Questi personaggi possono spendere i propri Benny sui tiri di qualunque animale sotto il loro controllo, incluse cavalcature, famigli e compagni animali di ogni genere.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Beast Master": {
+            "name": "Signore delle Bestie",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio piace agli animali, che non lo attaccano mai a meno che non sia lui ad aggredirli o non siano infuriati per qualche motivo.</p><p>Il magnetismo animale di un Signore delle Bestie è talmente forte da permettergli anche di attrarre un fedele compagno animale. Di solito si tratta di un animale di Taglia 0 o minore, soggetto all'approvazione del GM.</p><p>Il compagno animale è una Comparsa che non ottiene Avanzamenti. Se dovesse morire o essere congedato, può essere rimpiazzato in 1d4 giorni.</p><p><b>Compagni più Potenti</b>: Questo Vantaggio può essere acquisito più volte. Per ogni acquisizione oltre la prima, scegli uno dei seguenti effetti:</p>\n<ul>\n<li>Ottieni un ulteriore compagno animale.</li>\n<li>Uno dei tuoi compagni animali diventa Protagonista (il personaggio deve essere almeno di Rango Eroico).</li>\n<li>Incrementi di un tipo di dado uno dei Tratti del compagno animale (per ciascun compagno animale puoi incrementare un solo Tratto).</li>\n<li>Incrementi di +1 la Taglia massima dei compagni che puoi avere (massimo 3).</li>\n</ul>\n</div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        },
+        "Berserk": {
+            "name": "Berserk",
+            "description": "<div class=\"swade-core\"><p>Quando la furia rossa si impossessa di loro, i berserk diventano macchine di morte incontrollabili!</p><p>Subito dopo aver subito una Ferita o un risultato di Scosso (solo se in conseguenza di un attacco fisico), l’eroe deve effettuare un tiro di Intelligenza. Se fallisce, diventa preda della furia. Il giocatore può decidere di fallire il tiro volontariamente.</p><p>La furia berserk ha i seguenti effetti:</p>\n<ul>\n<li>IRA:&nbsp; <span class=\"fontstyle0\">La Forza del personaggio migliora di un tipo di dado. Tutti gli attacchi in corpo a corpo devono essere @Compendium[swade-core-rules.swade-rules.Wild Attack]{Attacchi Selvaggi (vedi pag. 125)}. Il personaggio non può utilizzare abilità che richiedono concentrazione e lucidità (a discrezione del GM). Può sicuramente urlare minacce e utilizzare Intimidire.</span> &nbsp;</li>\n<li>TENACIA:&nbsp; <span class=\"fontstyle0\">Il personaggio ottiene +2 alla Robustezza e ignora un punto di penalità da Ferite (questo effetto è cumulabile con altre capacità che riducono le penalità da Ferite).</span> &nbsp;</li>\n<li>FURIA CIECA:&nbsp; <span class=\"fontstyle0\">Ogni volta che ottiene un Fallimento Critico, il personaggio colpisce un bersaglio casuale, amico o nemico, a esclusione del bersaglio desiderato, che sia entro la sua portata. Se non ci sono bersagli disponibili, l’attacco non va a segno oppure distrugge un oggetto vicino, ecc.</span></li>\n</ul>\n<p>Dopo cinque round consecutivi l’eroe subisce un livello di Fatica, e dopo altri cinque ne subisce un altro e la furia berserk termina. Il personaggio può tentare di terminare la furia in qualunque momento effettuando un tiro di Intelligenza a -2. Tale tiro conta come azione gratuita. Se il personaggio cade nuovamente preda della furia berserk, il conteggio dei round riparte da zero, anche se nel corso di uno stesso scontro.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Block": {
+            "name": "Bloccare",
+            "description": "<div class=\"swade-core\"><p>L’esperienza sul campo di battaglia ha insegnato al personaggio come difendersi al meglio. Ottiene +1 alla Parata e il bonus di Tutti Assieme contro di lui è ridotto di 1.</p></div>",
+            "requirements": {
+                "value": "Navigato, Combattere d8+"
+            }
+        },
+        "Bolster": {
+            "name": "Incoraggiare",
+            "description": "<div class=\"swade-core\"><p>Umiliare o intimorire un nemico non solo lo fa esitare, ma sostiene e rinsalda il morale dei propri alleati. Quando effettui con successo un Test contro un nemico, puoi anche rimuovere da un alleato lo stato di Distratto o Vulnerabile (pag. 129).</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        },
+        "Brave": {
+            "name": "Coraggioso",
+            "description": "<div class=\"swade-core\"><p>I personaggi con questo Vantaggio sanno controllare le proprie paure oppure hanno affrontato talmente tanti orrori da essere diventati impassibili, e aggiungono perciò +2 ai tiri contro la Paura. Sottraggono inoltre 2 ai tiri sulla <b>Tabella della Paura</b> (vedi pag. 164).</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d6+"
+            }
+        },
+        "Brawler": {
+            "name": "Lottatore",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio picchia come un fabbro e il suo corpo sembra fatto di ferro. Ottiene +1 alla Robustezza e quando attacca con pugni e calci (o artigli!) infligge For+d4 danni.</p><p>Se possiede già un dado per il danno grazie ad <b>Artigli</b> (pag. 21), Studente di Arti Marziali o simili, Lottatore migliora quel dado di un tipo.</p><p>Lottatore non rende i pugni del personaggio <b>Armi Naturali</b> (pag. 104).</p></div>",
+            "requirements": {
+                "value": "Principiante, Forza d8+, Vigore d8+"
+            }
+        },
+        "Brawny": {
+            "name": "Massiccio",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio è imponente, oppure molto in forma. Ottiene +1 alla Taglia (e conseguentemente +1 alla Robustezza) e considera il dado di Forza come se fosse migliore di un tipo per quanto riguarda l’<b>Ingombro</b> (pag. 83) e la <b>Forza Minima</b> per l’uso di armi, armature e altro equipaggiamento (pag. 82). Massiccio non può aumentare la Taglia del personaggio oltre un valore di 3.</p></div>",
+            "requirements": {
+                "value": "Principiante, Forza d6+, Vigore d6+"
+            }
+        },
+        "Bruiser": {
+            "name": "Energumeno",
+            "description": "<div class=\"swade-core\"><p>Ottieni un ulteriore +1 alla Robustezza e il dado di danno per i pugni o artigli migliora di un tipo.</p></div>",
+            "requirements": {
+                "value": "Navigato, Lottatore"
+            }
+        },
+        "Brute": {
+            "name": "Bruto",
+            "description": "<div class=\"swade-core\"><p>I bruti sfruttano la propria forza anche nelle situazioni che richiederebbero coordinazione e flessibilità. Considerano Atletica come un’abilità associata alla Forza anziché all’Agilità durante la creazione del personaggio e per gli Avanzamenti. Il personaggio può inoltre resistere ai Test di Atletica utilizzando la Forza, se lo desidera.</p><p>I Bruti aggiungono +1 alla Gittata Corta degli oggetti scagliati e ricalcolano le Gittate successive in modo che ognuna sia il doppio della precedente. Per esempio, se la Gittata di un’arma scagliata è 3/6/12, per il Bruto è 4/8/16.</p></div>",
+            "requirements": {
+                "value": "Principiante, Agility d8+"
+            }
+        },
+        "Calculating": {
+            "name": "Calcolatore",
+            "description": "<div class=\"swade-core\"><p>Pochi secondi passati a studiare l’avversario possono permetterti di sfruttarne le debolezze. Quando ottieni una carta azione pari o inferiore a Cinque, puoi ignorare fino a 2 punti di penalità applicabili a una singola azione per quel round, incluse quelle derivanti da Copertura, Azioni Multiple, Gittata, o persino Ferite.</p></div>",
+            "requirements": {
+                "value": "Principiante, Intelligenza d8+"
+            }
+        },
+        "Champion": {
+            "name": "Campione",
+            "description": "<div class=\"swade-core\"><p>I campioni sono guerrieri e guerriere prescelti dalle forze del bene (o del male). Di solito sono anime devote e pronte a sacrificare la vita per servire la propria causa, ma alcuni potrebbero anche essere campioni riluttanti, cui il destino, la nascita o un altro evento ha imposto tale ruolo. I Campioni combattono le forze delle tenebre (o della luce) e aggiungono +2 ai tiri di danno contro le creature sovrannaturali malvagie (o buone, per i Campioni del male). Il bonus si applica a poteri, attacchi a distanza, in mischia, ad area, ecc. Spetta al GM decidere quali sono i tipi di nemici contro cui si applica il bonus, ma in generale dovrebbe trattarsi di creature malvagie (o buone!) la cui esistenza o i cui poteri sono di origine sovrannaturale.</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+, Combattere d6+"
+            }
+        },
+        "Channeling": {
+            "name": "Incanalare",
+            "description": "<div class=\"swade-core\"><p>Quando ottieni un incremento al tiro di abilità arcana, il costo in Punti Potere è ridotto di 1, e può arrivare a essere 0.</p></div>",
+            "requirements": {
+                "value": "Navigato, Background Arcano (Qualsiasi)"
+            }
+        },
+        "Charismatic": {
+            "name": "Carismatico",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe è una persona estremamente piacevole, forse perché ha modi gentili, perché ispira fiducia o perché è molto sicuro di sé.</p><p>Questo Vantaggio permette di ripetere un qualsiasi tiro di Persuasione.</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        },
+        "Chi": {
+            "name": "Chi",
+            "description": "<div class=\"swade-core\"><p>Lo studio delle discipline marziali ha portato il personaggio nei territori della consapevolezza mistica. All'inizio di ogni combattimento, l'eroe ottiene un Punto Chi, che può essere speso per:</p>\n<ul>\n<li>Ritirare un attacco fallito (anche un Fallimento Critico).</li>\n<li>Costringere un nemico a ritirare un attacco riuscito contro di lui.</li>\n<li>Aggiungere +d6 a un tiro di danno di un attacco di Combattere effettuato con Armi Naturali quali pugni, calci, artigli, che sia andato a segno (e tale dado può esplodere!).</li>\n</ul>\n<p>Alla fine del combattimento, se non è stato utilizzato, il Punto Chi è perso.</p></div>",
+            "requirements": {
+                "value": "Veterano, Esperto di Arti Marziali"
+            }
+        },
+        "Combat Acrobat": {
+            "name": "Combattimento Acrobatico",
+            "description": "<p>I combattenti più agili confondono i nemici balzando intorno a loro e rendendo impossibile colpirli. Gli attacchi contro il personaggio subiscono una penalità di -1, purché sia consapevole dell'attacco, abbia libertà di movimento e non stia subendo penalità da Ingombro o Forza Minima.</p>",
+            "requirements": {
+                "value": "Navigato, Acrobata"
+            }
+        },
+        "Combat Reflexes": {
+            "name": "Riflessi in Combattimento",
+            "description": "<div class=\"swade-core\"><p>Il tuo guerriero riesce a riprendersi rapidamente da shock e traumi. Aggiungi +2 ai tiri di Spirito per riprenderti da Scosso o Stordito.</p></div>",
+            "requirements": {
+                "value": "Navigato"
+            }
+        },
+        "Command": {
+            "name": "Comando",
+            "description": "<div class=\"swade-core\"><p>Comando è la capacità basilare di impartire istruzioni chiare anche nel mezzo della battaglia. Le Comparse entro il Raggio di Comando aggiungono +1 ai tiri per riprendersi da Scosso.</p></div>",
+            "requirements": {
+                "value": "Principiante, Intelligenza d6+"
+            }
+        },
+        "Command Presence": {
+            "name": "Presenza Imperiosa",
+            "description": "<div class=\"swade-core\"><p>Una voce stentorea, comandi efficaci, un carisma naturale o il semplice addestramento possono rendere un comandante molto più efficace. Il <b>Raggio di Comando</b> del personaggio diventa 10'' (20 metri).</p></div>",
+            "requirements": {
+                "value": "Navigato, Comando"
+            }
+        },
+        "Common Bond": {
+            "name": "Legame Comune",
+            "description": "<div class=\"swade-core\"><p>Eroi altruisti e leader determinati sanno che la loro vera forza consiste nell'unione con i propri alleati, e sono disposti a tutto pur di supportarli.</p><p>Questo Vantaggio ti permette di cedere i tuoi Benny agli alleati con i quali puoi comunicare. Il giocatore dovrebbe spiegare in che modo ottiene questo effetto: un grido di incoraggiamento, una pacca sulla spalla, ecc.</p></div>",
+            "requirements": {
+                "value": "Protagonista, Principiante, Spirito d8+"
+            }
+        },
+        "Concentration": {
+            "name": "Concentrazione",
+            "description": "<div class=\"swade-core\"><p>L’eroe è in grado di concentrare le proprie energie in maniera più efficace. La Durata di base dei poteri che non sono Istantanei è raddoppiata. Tale effetto si applica anche al mantenimento dei poteri.</p></div>",
+            "requirements": {
+                "value": "Navigato, Background Arcano (Qualsiasi)"
+            }
+        },
+        "Connections": {
+            "name": "Contatti",
+            "description": "<div class=\"swade-core\"><p>L'eroe ha stretto un contatto con persone oppure con organizzazioni che possono aiutarlo quando è in difficoltà. Potrebbe trattarsi della mafia, dell'FBI, di un sindacato, una gilda, o persino altri avventurieri.</p><p>Questo Vantaggio può essere acquisito più volte, specificando ogni volta un tipo di Contatto diverso. Una volta per sessione, se può contattarli in qualche modo, il personaggio può richiedere un favore al proprio Contatti.</p><p>Il favore dipende dal tipo di organizzazione o fazione (a discrezione del GM), ma può includere un prestito, equipaggiamento, alcuni guerrieri Alleati, trasporto, informazioni, o persino un professionista che dispone di un'abilità di cui il gruppo è sprovvisto, come per esempio un hacker o uno studioso.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Counterattack": {
+            "name": "Contrattacco",
+            "description": "<div class=\"swade-core\"><p>I combattenti con questo Vantaggio sanno come rispondere istantaneamente a un errore dell’avversario. Una volta per round, se non sei Scosso o Stordito, puoi effettuare un <b>Attacco Gratuito</b> (pag. 125) contro un nemico adiacente che ha fallito un attacco di Combattere contro di te. Il contrattacco deve essere risolto immediatamente (prima di eventuali altri attacchi contro il tuo personaggio).</p></div>",
+            "requirements": {
+                "value": "Navigato, Combattere d8+"
+            }
+        },
+        "Danger Sense": {
+            "name": "Senso del Pericolo",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe percepisce se sta per capitare qualcosa di brutto. Quando sta per essere vittima di un attacco a Sorpresa (pag. 135), ottiene +2 al tiro di Percezione per poter agire al primo round. Se ottiene un incremento al tiro, inizia l'incontro come se fosse già in Pausa.</p><p>In situazioni non coperte dalle regole dalla Sorpresa (l'attacco di un cecchino, una trappola meccanica, una bevanda avvelenata, ecc.), Senso del Pericolo consente di effettuare un tiro di Percezione a -2 (o a +2 se la situazione consentiva già un tiro di Percezione) per accorgersi del pericolo e agire di conseguenza. Nel caso di un attacco, se l'eroe riesce nel tiro di Percezione, l'aggressore non può considerarlo Inerme.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Dead Shot": {
+            "name": "Colpo Mortale",
+            "description": "<div class=\"swade-core\"><p>Quando ricevi un Jolly come carta azione, raddoppi il totale dei danni inflitti con il primo attacco andato a segno di Sparare o Atletica (utilizzata per scagliare un’arma o un oggetto).</p></div>",
+            "requirements": {
+                "value": "Protagonista, Principiante, Atletica o Sparare d8+"
+            }
+        },
+        "Dodge": {
+            "name": "Schivare",
+            "description": "<div class=\"swade-core\"><p>L’eroe riesce ad anticipare gli attacchi o sa come muoversi per non farsi colpire. A meno che il personaggio non sia vittima di un attacco a sorpresa che lo coglie alla sprovvista, tutti gli attacchi a distanza contro di lui subiscono una penalità di -2, non cumulabile con eventuali penalità da Copertura.</p></div>",
+            "requirements": {
+                "value": "Navigato, Agilità d8+"
+            }
+        },
+        "Double Tap": {
+            "name": "Doppio Colpo",
+            "description": "<div class=\"swade-core\"><p>Un esperto di armi da fuoco riesce a sparare due colpi in rapida successione senza che ne risenta la precisione del tiro.</p><p>Doppio Colpo può essere utilizzato solo con armi che hanno Cadenza di Tiro 1 e che non devono essere ricaricate manualmente per sparare due colpi in successione. Anziché effettuare due tiri di attacco, tiri una sola volta ma aggiungi +1 al tiro per colpire e ai danni, e consumi due munizioni. Questa manovra conta come una sola azione e puoi effettuarla più volte se decidi di compiere Azioni Multiple.</p><p>Doppio Colpo non può essere combinato con Fuoco Rapido.</p><p>Se utilizzato con un’arma in grado di effettuare una <b>Raffica da Tre Colpi</b> (vedi pag. 83), aggiunge +2 al tiro di Sparare e ai danni, invece di +1, e consuma sei proiettili.</p></div>",
+            "requirements": {
+                "value": "Navigato, Sparare d6+"
+            }
+        },
+        "Elan": {
+            "name": "Impeto",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio ha dentro di sé l’energia per affrontare le circostanze più avverse.</p><p>Quando spendi un Benny per ripetere un tiro su un Tratto, aggiungi +2 al totale. Il bonus si applica solo al secondo tiro, non al primo, e non si applica ai tiri di danno (perché non sono tiri su un Tratto) né quando spendi un Benny per effettuare un tiro di Assorbimento (a meno che non decidi di spenderne un altro per ripetere il tiro di Vigore).</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        },
+        "Expert": {
+            "name": "Esperto",
+            "description": "<div class=\"swade-core\"><p>Come per Professionista, il Tratto e il relativo limite massimo ricevono un ulteriore incremento.</p></div>",
+            "requirements": {
+                "value": "Leggendario, Professionista nel Tratto specifico"
+            }
+        },
+        "Extra Effort": {
+            "name": "Sforzo in Più",
+            "description": "<div class=\"swade-core\"><p>Alcuni personaggi riescono ad accedere alle loro energie più recondite per potenziare i propri poteri.</p><p>Puoi spendere 1 Punto Potere per aumentare di +1 il risultato finale di un tiro di Focus, oppure puoi spenderne 3 per aggiungere +2. Non puoi però usare questo Vantaggio per migliorare un Fallimento Critico.</p></div>",
+            "requirements": {
+                "value": "Navigato, Background Arcano (Dono), Focus d6+"
+            }
+        },
+        "Extraction": {
+            "name": "Disimpegno",
+            "description": "<div class=\"swade-core\"><p>Quando il personaggio si ritira dal corpo a corpo, i nemici adiacenti ottengono un attacco gratuito di Combattere contro di lui (vedi <b>Ritirarsi dalla Mischia</b>, pag. 134). È una scelta rischiosa per la maggior parte delle persone, ma non per il tuo eroe.</p><p>Quando si allontana da nemici adiacenti, uno di loro (a tua scelta) non ottiene l’attacco gratuito di Combattere.</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+"
+            }
+        },
+        "Fame": {
+            "name": "Fama",
+            "description": "<div class=\"swade-core\"><p>Il personaggio gode di una certa notorietà. Potrebbe essere un bardo noto in tutto il feudo, una rockstar minore o un attore di B-movie diventati <i>cult</i>.</p><p>Se decide di Esibirsi per raccogliere fondi, raddoppia il denaro raccolto (vedi Esibirsi a pag. 37). Può inoltre sfruttare la propria fama per aggiungere +1 ai tiri di Persuasione se il bersaglio è già amichevole e conosce il personaggio (un tiro di Conoscenze Comuni può determinare se questo è il caso).</p><p>D’altra parte, la Fama del personaggio comporta che spesso sarà riconosciuto e importunato da sconosciuti, potrebbe essere seguito da fan e ammiratori, o avere impegni collegati a concerti, esibizioni e simili.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Famous": {
+            "name": "Famoso",
+            "description": "<div class=\"swade-core\"><p>L’eroe è una vera celebrità. È ben conosciuto in un contesto molto ampio, che potrebbe essere una nazione, un medium popolare (per esempio il cinema o l’industria musicale) o un settore o ambito specifico.</p><p>Se decide di Esibirsi per raccogliere fondi, moltiplica per 5 il denaro raccolto (vedi <b>Esibirsi</b> a pag. 37). Può inoltre sfruttare la propria fama per aggiungere +2 ai tiri di Persuasione se il bersaglio è già amichevole e conosce il personaggio (un tiro di Conoscenze Comuni può determinare se questo è il caso).</p><p>Il prezzo da pagare per la celebrità include obblighi e impegni, rivalità, scandali e pettegolezzi e l’impossibilità di agire in pubblico senza essere riconosciuti.</p></div>",
+            "requirements": {
+                "value": "Navigato, Fama"
+            }
+        },
+        "Fast Healer": {
+            "name": "Guarigione Rapida",
+            "description": "<div class=\"swade-core\"><p>Il personaggio aggiunge +2 al tiro di Vigore per la guarigione naturale ed effettua tale tiro ogni tre giorni, anziché ogni cinque (vedi Guarigione a pag. 122).</p></div>",
+            "requirements": {
+                "value": "Principiante, Vigore d8+"
+            }
+        },
+        "Feint": {
+            "name": "Finta",
+            "description": "<div class=\"swade-core\"><p>Quando effettui un <b>Test</b> (pag. 138) con l’abilità Combattere, puoi scegliere di costringere l’avversario a resistere con un tiro di Intelligenza anziché di Agilità.</p></div>",
+            "requirements": {
+                "value": "Principiante, Combattere d8+"
+            }
+        },
+        "Fervor": {
+            "name": "Fervore",
+            "description": "<div class=\"swade-core\"><p>Una semplice frase, se pronunciata da un grande leader, può produrre risultati sorprendenti. Un comandante con questa abilità può ispirare i suoi uomini gridando un motto o un grido di battaglia. Tutte le Comparse entro il Raggio di Comando aggiungono +1 ai tiri di danno quando attaccano con Combattere.</p></div>",
+            "requirements": {
+                "value": "Veterano, Spirito d8+, Comando"
+            }
+        },
+        "Filthy Rich": {
+            "name": "Ricco Sfondato",
+            "description": "<div class=\"swade-core\"><p>Questo fortunato individuo è estremamente ricco. Durante la creazione del personaggio suoi fondi iniziali sono moltiplicati per cinque. Se nell’ambientazione ha senso, l’eroe dispone di entrate annuali equivalenti a €500.000 odierni, ma tale ricchezza comporta di certo anche una dose di responsabilità che il GM potrebbe introdurre in gioco.</p><p>Possono esistere personaggi ancora più ricchi, ma probabilmente in gioco non farebbe molta differenza. Se desideri giocare un personaggio ancora più ricco, devi concordare con il GM quali beni e patrimoni possiedi e quali oneri e responsabilità li accompagnano.</p></div>",
+            "requirements": {
+                "value": "Principiante, Ricco"
+            }
+        },
+        "First Strike": {
+            "name": "Primo Colpo",
+            "description": "<div class=\"swade-core\"><p>Una volta per round, se non sei Scosso né Stordito, ottieni un attacco gratuito di Combattere contro un nemico non appena si avvicina entro la tua Portata. Questo attacco interrompe automaticamente l’azione del nemico (vedi Attacchi Gratuiti a pag. 125).</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+"
+            }
+        },
+        "Fleet-Footed": {
+            "name": "Pieveloce",
+            "description": "<div class=\"swade-core\"><p>Il Passo dell’eroe è aumentato di +2 e il suo dado per correre migliora di un tipo (da d6 a d8, per esempio).</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d6+"
+            }
+        },
+        "Followers": {
+            "name": "Seguaci",
+            "description": "<div class=\"swade-core\"><p>Ogni volta che acquisisci questo Vantaggio, cinque seguaci si uniscono al tuo personaggio. Eventuali perdite vengono rimpiazzate automaticamente dopo un po' di tempo (è il GM a stabilire quanto tempo e quali circostanze possano essere necessarie).</p><p>I seguaci devono avere modo di mangiare e permettersi da vivere, e di solito si aspettano di ricevere una parte di bottino o altre ricompense ricevute dall'eroe. A parte questo, sono totalmente fedeli al personaggio e pronti a eseguire i suoi comandi. Non getteranno via le proprie vite in modo avventato, ma sono pronti a correre rischi sensati per servire il personaggio.</p><p>Per rappresentarli in gioco, utilizza le statistiche indicate per il Soldato a pag. 143. L'eroe può dotarli di qualunque equipaggiamento desidera. I seguaci ottengono Avanzamenti (pag. 68) come i personaggi dei giocatori.</p><p>Se lo desideri, puoi conferire a ciascuno dei tuoi seguaci una personalità individuale utilizzando le regole per gli Alleati (pag. 141).</p></div>",
+            "requirements": {
+                "value": "Protagonista, Leggendario"
+            }
+        },
+        "Free Runner": {
+            "name": "Parkour",
+            "description": "<div class=\"swade-core\"><p>Il tuo personaggio pratica il parkour o è comunque un esperto di salti, corse, volteggi, capriole e altre acrobazie che gli consentono di superare ogni genere di ostacoli.</p><p>Quando si muove a piedi, l’eroe può spostarsi del proprio normale Passo anche su Terreno Difficile, fin tanto che vi siano ostacoli su cui possa balzare, scivolare, volteggiare o simili. Aggiunge inoltre +2 ai tiri di Atletica per arrampicarsi e durante gli <b>Inseguimenti</b> (pag. 151).</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+, Atletica d6+"
+            }
+        },
+        "Frenzy": {
+            "name": "Frenesia",
+            "description": "<div class=\"swade-core\"><p>Una volta per round, quando effettua un attacco di Combattere, il personaggio lancia due dadi di Combattere (assieme a un solo Dado del Destino, perché si tratta di una sola azione). Ciascun dado può essere indirizzato a un bersaglio differente o entrambi possono essere rivolti allo stesso nemico, e ciascun dado, se colpisce, è risolto separatamente, cioè uno alla volta, per quanto riguarda i danni.</p></div>",
+            "requirements": {
+                "value": "Navigato, Combattere d8+"
+            }
+        },
+        "Gadgeteer": {
+            "name": "Inventore",
+            "description": "<div class=\"swade-core\"><p>Questi guru della meccanica sono in grado di improvvisare dispositivi incredibili a partire da materiali di fortuna.</p><p>Un Inventore può spendere fino a 3 Punti Potere per costruire un congegno improvvisato, purché abbia accesso a un minimo di materiali di recupero o pezzi di ricambio. Tale congegno consente di utilizzare un potere tra quelli disponibili agli Scienziati Pazzi dell'ambientazione, purché di Rango accessibile all'Inventore, e con un costo in Punti Potere pari o inferiore a 3.</p><p>Il costo totale del potere (compresi eventuali modificatori al potere) non può eccedere il numero di Punti Potere spesi per creare il congegno ma, se lo desidera, il personaggio può creare più di un oggetto, fintantoché possiede Punti Potere per farlo.</p><p>La creazione dell'oggetto richiede un tiro di Scienza Folle a -2 e impegna il personaggio per un intero turno, durante il quale non può compiere altre azioni (neanche come Azioni Multiple).</p><p>L'inventore utilizza i Punti Potere direttamente dalla propria riserva, ma una volta che la Durata è conclusa, l'oggetto cade in pezzi tra le sue mani. La Durata base non può essere estesa.</p><p><i><b>Esempio</b>: Gabe è uno scienziato pazzo nel Weird West. Vuole utilizzare incrementa tratto per aiutare Red che sta affrontando un serpente a sonagli gigante, ma dispone solo dei poteri esplosione e scarica. Per fortuna possiede il Vantaggio Inventore e decide di costruire un induttore bioelettrico. Il congegno improvvisato può ricevere fino a 3 Punti Potere, perciò Gabe decide di aggiungere il modificatore Affrettare, così Red ottiene anche +2 al Passo.</i></p></div>",
+            "requirements": {
+                "value": "Navigato, Background Arcano (Scienza Folle), Scienza Folle d6+"
+            }
+        },
+        "Giant Killer": {
+            "name": "Ammazzagiganti",
+            "description": "<div class=\"swade-core\"><p>Più grossi sono e più è difficile ucciderli... almeno per gli altri. Il tuo eroe sa sfruttare i punti deboli dei nemici più grandi. Quando attacchi avversari la cui Taglia è maggiore della tua di almeno tre punti (vedi Taglia a pag. 224), aggiungi +1d6 danni. Un umano (Taglia 0) ottiene questo bonus contro creature con Taglia 3 o superiore.</p></div>",
+            "requirements": {
+                "value": "Veterano"
+            }
+        },
+        "Great Luck": {
+            "name": "Fortuna Sfacciata",
+            "description": "<div class=\"swade-core\"><p>Il giocatore riceve due Benny in più invece di uno.</p></div>",
+            "requirements": {
+                "value": "Principiante, Fortuna"
+            }
+        },
+        "Hard To Kill": {
+            "name": "Duro a Morire",
+            "description": "<div class=\"swade-core\"><p>Questo eroe ha più vite di una nidiata di gatti. Quando effettua il tiro di Vigore per evitare il Dissanguamento (pag. 121) ignora le penalità da Ferite.</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        },
+        "Harder To Kill": {
+            "name": "Ancora Più Duro a Morire",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe è più difficile di Rasputin da ammazzare. Se mai dovesse essere ucciso, puoi ancora tirare un dado: se il risultato è dispari, è davvero morto. Se invece è pari, è Incapacitato ma in qualche modo sfugge alla morte. Può essere catturato, spogliato di tutto ciò che gli appartiene, ritenuto morto e abbandonato sul campo, ma in qualche modo sopravvive.</p></div>",
+            "requirements": {
+                "value": "Veterano, Duro a Morire"
+            }
+        },
+        "Healer": {
+            "name": "Guaritore",
+            "description": "<div class=\"swade-core\"><p>Gli eroi con questo Vantaggio aggiungono +2 ai tiri di Guarigione, che siano di origine magica o naturale.</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        },
+        "Hold The Line!": {
+            "name": "Mantenete la Posizione!",
+            "description": "<div class=\"swade-core\"><p>Le Comparse entro il Raggio di Comando ottengono +1 alla Robustezza.</p></div>",
+            "requirements": {
+                "value": "Navigato, Intelligenza d8+, Comando"
+            }
+        },
+        "Humiliate": {
+            "name": "Umiliare",
+            "description": "<div class=\"swade-core\"><p>Le persone dotate di un acume crudele possono distruggere l'autostima dei rivali con un semplice gesto o un'osservazione pungente.</p><p>Puoi ripetere gratuitamente il tiro di dado quando effettui un Test di Provocare.</p></div>",
+            "requirements": {
+                "value": "Principiante, Provocare d8+"
+            }
+        },
+        "Improved Arcane Resistance": {
+            "name": "Resistenza Arcana Migliorata",
+            "description": "<div class=\"swade-core\"><p>Come Resistenza Arcana, ma la penalità diventa -4 e i danni sono ridotti di 4.</p></div>",
+            "requirements": {
+                "value": "Principiante, Resistenza Arcana"
+            }
+        },
+        "Improved Block": {
+            "name": "Bloccare Migliorato",
+            "description": "<div class=\"swade-core\"><p>Il bonus alla Parata diventa +2 e il bonus di Tutti Assieme contro di il personaggio è ridotto di 2.</p></div>",
+            "requirements": {
+                "value": "Veterano, Bloccare"
+            }
+        },
+        "Improved Counterattack": {
+            "name": "Contrattacco Migliorato",
+            "description": "<div class=\"swade-core\"><p>Come sopra, ma puoi effettuare fino a tre contrattacchi ogni round.</p></div>",
+            "requirements": {
+                "value": "Veterano, Contrattacco"
+            }
+        },
+        "Improved Dodge": {
+            "name": "Schivare Migliorato",
+            "description": "<div class=\"swade-core\"><p>Il personaggio aggiunge +2 ai tiri per Sfuggire a un <b>Attacco con Effetto ad Area</b> (vedi pag. 134).</p></div>",
+            "requirements": {
+                "value": "Navigato, Schivare"
+            }
+        },
+        "Improved Extraction": {
+            "name": "Disimpegno Migliorato",
+            "description": "<div class=\"swade-core\"><p>Fino a tre nemici adiacenti (a tua scelta) si vedono negata la possibilità di sferrare un attacco gratuito di Combattere quando il tuo personaggio si allontana da loro.</p></div>",
+            "requirements": {
+                "value": "Navigato, Disimpegno"
+            }
+        },
+        "Improved First Strike": {
+            "name": "Primo Colpo Migliorato",
+            "description": "<div class=\"swade-core\"><p>Puoi utilizzare Primo Colpo fino a tre volte nello stesso round, purché contro tre nemici diversi.</p></div>",
+            "requirements": {
+                "value": "Eroico, Pimo colpo"
+            }
+        },
+        "Improved Frenzy": {
+            "name": "Frenesia Migliorata",
+            "description": "<div class=\"swade-core\"><p>Come Frenesia, ma puoi utilizzare il dado di Combattere aggiuntivo fino a due volte nello stesso round, se effettui due attacchi di Combattere.</p><p><i><b>Esempio</b>: Red sta affrontando una creatura simile a un granchio gigante su un pianeta alieno. Ha Frenesia Migliorata e decide di attaccare tre volte (subendo la penalità da Azioni Multiple). Per il primo e il secondo attacco che sferra lancia due dadi di Combattere (assieme al Dado del Destino), mentre per il terzo attacco tira un dado solo (sempre assieme al Dado del Destino).</i></p></div>",
+            "requirements": {
+                "value": "Veterano, Frenesia"
+            }
+        },
+        "Improved Level Headed": {
+            "name": "Nervi saldi migliorati",
+            "description": "Vedi SWADE p.54",
+            "requirements": {
+                "value": "Navigato, Nervi saldi"
+            }
+        },
+        "Improved Nerves of Steel": {
+            "name": "Tempra d’Acciaio Migliorata",
+            "description": "<div class=\"swade-core\"><p>Puoi ignorare 2 punti di penalità da Ferite.</p></div>",
+            "requirements": {
+                "value": "Principiante, Tempra d'Acciaio"
+            }
+        },
+        "Improved Rapid Fire": {
+            "name": "Fuoco Rapido Migliorato",
+            "description": "<div class=\"swade-core\"><p>L’eroe può aumentare di 1 la Cadenza di Tiro due volte nello stesso round (utilizzando le Azioni Multiple).</p><p><span class=\"fontstyle0\"><i><b>Esempio</b>: Gabe fa fuoco con un mitra e ha Fuoco Rapido Migliorato. L’arma ha Cadenza di Tiro 4 e Gabe decide di sparare con tutte e tre le azioni (vedi <b>Azioni Multiple</b> a pag. 125). Gabe lancia quindi un dado aggiuntivo di Sparare con il primo e il secondo attacco, perché per due volte aumenta a 5 la Cadenza di Tiro dell’arma. Il terzo attacco non beneficia di questo effetto, invece, e la CdT dell’arma rimane 4.</i></span></p></div>",
+            "requirements": {
+                "value": "Veterano, Fuoco Rapido"
+            }
+        },
+        "Improved Rapid Recharge": {
+            "name": "Ricarica Rapida Migliorata",
+            "description": "<div class=\"swade-core\"><p>Il ritmo di ricarica diventa 20 Punti Potere per ogni ora di riposo.</p></div>",
+            "requirements": {
+                "value": "Veterano, Ricarica Rapida"
+            }
+        },
+        "Improved Sweep": {
+            "name": "Spazzata Migliorata",
+            "description": "<div class=\"swade-core\"><p>Come Spazzata, ma senza la penalità di -2 al tiro di Combattere.</p></div>",
+            "requirements": {
+                "value": "Veterano, Spazzata"
+            }
+        },
+        "Improved Trademark Weapon": {
+            "name": "Arma Personale Migliorata",
+            "description": "<div class=\"swade-core\"><p>Come Arma Personale, ma i bonus associati all’arma diventano +2</p></div>",
+            "requirements": {
+                "value": "Navigato, Arma Personale"
+            }
+        },
+        "Improvisational Fighter": {
+            "name": "Combattente Improvvisatore",
+            "description": "<div class=\"swade-core\"><p>A qualunque eroe prima o poi capita di doversi difendere utilizzando oggetti non pensati per il combattimento. I personaggi con questo Vantaggio sono veri esperti di queste situazioni e ignorano la penalità di -2 associata alle Armi Improvvisate (pag. 123).</p></div>",
+            "requirements": {
+                "value": "Navigato, Intelligenza d6+"
+            }
+        },
+        "Inspire": {
+            "name": "Ispirare",
+            "description": "<div class=\"swade-core\"><p>I leader di straordinaria esperienza sanno come ispirare i propri uomini anche di fronte a pericoli e avversità letali.</p><p>Una volta per turno, l'eroe può utilizzare la propria abilità di Battaglia per effettuare un tiro di Supporto a favore di un solo tipo di tiro su un Tratto, applicandolo a tutte le Comparse alleate entro il Raggio di Comando. Può, per esempio, Supportare tutti gli attacchi di Sparare, oppure tutti i tiri di Spirito per riprendersi da Scosso.</p><p>L'utilizzo di Ispirare è un'azione e richiede che il personaggio possa in qualche modo comunicare con gli alleati che ne beneficiano.</p></div>",
+            "requirements": {
+                "value": "Navigato, Comando"
+            }
+        },
+        "Investigator": {
+            "name": "Investigatore",
+            "description": "<div class=\"swade-core\"><p>Gli Investigatori sanno come raccogliere informazioni e risolvere misteri intricati. Alcuni sono veri e propri investigatori privati, mentre altri potrebbero essere stregoni, professori, o persone comuni ma dotate di un fiuto infallibile per gli indizi.</p><p>Gli Investigatori aggiungono +2 ai tiri di Ricerca e Percezione quando sono alla ricerca di indizi tra documenti, appunti, corrispondenze, o cercano oggetti nascosti tra pile di cianfrusaglie, rifiuti o detriti.</p></div>",
+            "requirements": {
+                "value": "Principiante, Intelligenza d8+, Ricerca d8+"
+            }
+        },
+        "Iron Jaw": {
+            "name": "Incassatore",
+            "description": "<div class=\"swade-core\"><p>L’eroe riesce a incassare persino i colpi più devastanti. Aggiunge +2 ai tiri di Assorbimento e al tiro di Vigore per resistere a un <b>Colpo Tramortente</b> (pag. 131).</p></div>",
+            "requirements": {
+                "value": "Principiante, Vigore d8+"
+            }
+        },
+        "Iron Will": {
+            "name": "Volontà di Ferro Migliorata",
+            "description": "<div class=\"swade-core\"><p>Ben pochi possono sperare di far vacillare il tuo personaggio. Il bonus di Volontà di Ferro si applica anche ai tiri di Intelligenza o Spirito per resistere ai poteri ee negarne gli effetti. Non è comunque cumulabile con Coraggioso, e non si applica ai tiri per resistere alle conseguenze dei poteri, per esempio contro la Paura o per riprendersi da Scosso.</p></div>",
+            "requirements": {
+                "value": "Navigato, Coraggioso, Volontà di Ferro"
+            }
+        },
+        "Jack-of-all-Trades": {
+            "name": "Tuttofare",
+            "description": "<div class=\"swade-core\"><p>Che sia merito di una buona istruzione, software di apprendimento, o semplice intuizione, questo eroe riesce a cavarsela imparando velocemente come affrontare ogni situazione, con un po' di tempo e di fortuna.</p><p>Dopo aver osservato o studiato un argomento, il personaggio effettua, come azione, un tiro di Intelligenza. Se riesce, ottiene d4 in quella abilità (o d6 in caso di incremento). Se fallisce, o se desidera ottenere un incremento, può ripetere il tiro dopo un’ora di studio, tentativi, ecc.</p><p>Il dado così ottenuto dura fino a che il personaggio non tenta di apprendere una nuova abilità (a prescindere dal risultato).</p></div>",
+            "requirements": {
+                "value": "Principiante, Intelligenza d10+"
+            }
+        },
+        "Killer Instinct": {
+            "name": "Istinto Omicida",
+            "description": "<div class=\"swade-core\"><p>Questo eroe odia perdere. Può ripetere gratuitamente il tiro ogni volta che effettua un Test come personaggio attivo.</p></div>",
+            "requirements": {
+                "value": "Navigato"
+            }
+        },
+        "Level Headed": {
+            "name": "Nervi Saldi",
+            "description": "<div class=\"swade-core\"><p>I combattenti che sanno mantenere la calma quando tutti corrono al riparo sono gli avversari tra i più pericolosi. Un eroe con questo Vantaggio pesca una carta azione in più e sceglie quale utilizzare.</p></div>",
+            "requirements": {
+                "value": "Navigato, Intelligenza d8+"
+            }
+        },
+        "Linguist": {
+            "name": "Linguista",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio probabilmente ha viaggiato molto o è molto portato per le lingue. Inizia il gioco conoscendo un numero di lingue aggiuntive pari a metà del suo dado di Intelligenza, ognuna delle quali con d6 (vedi l’abilità <b>Linguaggi</b> a pag. 40).</p></div>",
+            "requirements": {
+                "value": "Principiante, Intelligenza d6+"
+            }
+        },
+        "Liquid Courage": {
+            "name": "Coraggio in Bottiglia",
+            "description": "<p>Ci sono persone che reagiscono all'alcol in maniera molto particolare. Il round successivo a una buona sorsata (almeno 200 cl di qualcosa di forte), consideri il Vigore incrementato di un tipo di dado (e conseguentemente ottieni +1 alla Robustezza). Ignori inoltre un livello di penalità da Ferite (effetto cumulabile con quello di altre capacità equivalenti).</p><p>I tiri di Intelligenza e Agilità e delle loro abilità associate subiscono però una penalità di -1.</p><p>Tali effetti durano per un'ora, dopodiché il personaggio subisce un livello di Fatica che dura per le quattro ore successive.</p>",
+            "requirements": {
+                "value": "Principiante, Vigore d8+"
+            }
+        },
+        "Luck": {
+            "name": "Fortuna",
+            "description": "<div class=\"swade-core\"><p>Questo avventuriero sembra avere dalla sua il karma, gli dèi o il destino stesso, fatto sta che supera spesso grandi difficoltà e pericoli mortali. All’inizio di ogni sessione riceve un Benny in più.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Marksman": {
+            "name": "Tiratore Scelto",
+            "description": "<div class=\"swade-core\"><p>L’eroe ha un talento naturale per gli attacchi a distanza. Se nel round non compie nessun movimento e fa fuoco con una Cadenza di Tiro non superiore a 1 per azione, può ignorare fino a 2 punti di penalità al tiro di Sparare (o Atletica, per le armi scagliate) causate da Colpi Mirati, Copertura, Gittata, Scala o Velocità. Questo effetto è cumulabile con la manovra Mirare e si applica a tutte le azioni di Sparare o di Atletica (scagliare) per il round in corso.</p></div>",
+            "requirements": {
+                "value": "Navigato, Atletica d8+ o Sparare d8+"
+            }
+        },
+        "Martial Artist": {
+            "name": "Studente di Arti Marziali",
+            "description": "<div class=\"swade-core\"><p>L’eroe ha studiato le basi delle arti marziali. Considera mani e piedi come <b>Armi Naturali</b> (pag. 124) e non è mai considerato disarmato. Quando combatte senza armi aggiunge +1 ai tiri di Combattere e infligge For+d4 danni. Se il personaggio ha già ottenuto tale effetto, per esempio grazie agli <b>Artigli</b> (pag. 21) o al Vantaggio Lottatore, il dado dei danni migliora di un tipo (per esempio, For+d4 diventa For+d6).</p><p>Studente di Arti Marziali non migliora il dado dei danni di altre Armi Naturali quali zanne o corna.</p></div>",
+            "requirements": {
+                "value": "Principiante, Combattere d6+"
+            }
+        },
+        "Martial Warrior": {
+            "name": "Esperto di Arti Marziali",
+            "description": "<div class=\"swade-core\"><p>Questo combattente ha approfondito lo studio delle arti marziali. Il dado per i danni a mani nude migliora di un tipo e aggiunge +2 (anziché +1) ai tiri di Combattere quando non usa armi.</p></div>",
+            "requirements": {
+                "value": "Navigato, Studente di Arti Marziali"
+            }
+        },
+        "Master": {
+            "name": "Maestro",
+            "description": "<div class=\"swade-core\"><p>Quando effettui un tiro del Tratto specifico, utilizzi il d10 come Dado del Destino invece del d6.</p></div>",
+            "requirements": {
+                "value": "Protagonista, Leggendario, Esperto nel Tratto specifico"
+            }
+        },
+        "Master of Arms": {
+            "name": "Gran Maestro d'Armi",
+            "description": "<div class=\"swade-core\"><p>Ottieni un ulteriore +1 alla Parata e il dado per i danni aggiuntivi diventa il d10.</p></div>",
+            "requirements": {
+                "value": "Leggendario, Maestro d'Armi"
+            }
+        },
+        "Master Tactician": {
+            "name": "Maestro di Tattica",
+            "description": "<div class=\"swade-core\"><p>Come Tattico, ma il personaggio riceve adesso due carte che potrà assegnare agli alleati.</p></div>",
+            "requirements": {
+                "value": "Veterano, Tattico"
+            }
+        },
+        "McGyver": {
+            "name": "McGyver",
+            "description": "<div class=\"swade-core\"><p>Quando c'è bisogno di uno strumento, questo personaggio riesce sempre a improvvisare qualcosa. Se dispone di pochi oggetti comuni, può tentare un tiro di Riparare per creare strumenti, esplosivi o armi improvvisate, che durano fino a che vengono utilizzate o fino alla fine dell'incontro o scena (a discrezione del GM). La creazione dell'oggetto richiede un intero turno, durante il quale il personaggio non può muoversi né compiere altre azioni.</p><p>Con un Fallimento, il personaggio non è riuscito a completare l'oggetto, ma può tirare nuovamente il round successivo. Se ottiene un Fallimento Critico, il personaggio non dispone di materiali adatti e non può creare l'oggetto per il resto dell'incontro o scena.</p><p>Con un successo, l'eroe può creare un esplosivo minore (2d4 danni entro un MEP), oppure un'arma da fuoco improvvisata con un solo colpo (Gittata 5/10/20, 2d6 danni), una zattera malferma, una fonte di alimentazione elettrica, ecc.</p><p>Con un incremento, può creare un esplosivo più potente (2d6 danni entro un MEM o 2d4 in un MEG), un'arma a distanza migliore (Gittata 10/20/40, 2d8 danni, 5 Colpi), una zattera più stabile, una batteria più potente, e così via.</p><p>Qualità ed efficacia della creazione sono a discrezione completa del GM, ma la creatività dovrebbe essere ricompensata, specie durante le situazioni più drammatiche.</p></div>",
+            "requirements": {
+                "value": "Principiante, Intelligenza d6+, Percezione d8+, Riparare d6+"
+            }
+        },
+        "Menacing": {
+            "name": "Minaccioso",
+            "description": "<div class=\"swade-core\"><p>Essere scorbutici o poco attraenti ha sicuramente un lato positivo, quando si tratta di incutere paura nel cuore dei nemici.</p><p>Aggiungi +2 ai tiri di Intimidire.</p></div>",
+            "requirements": {
+                "value": "Principiante, uno Svantaggio tra Brutto, Implacabile, Meschino o Sanguinario"
+            }
+        },
+        "Mentalist": {
+            "name": "Mentalista",
+            "description": "<div class=\"swade-core\"><p>Il contatto continuo con le menti altrui ha reso la psiche del personaggio più forte e resistente.</p><p>Un Mentalista aggiunge +2 ai tiri contrapposti di Arti Psioniche per attivare i propri poteri o per resistere a quelli altrui.</p></div>",
+            "requirements": {
+                "value": "Navigato, Background Arcano (Arti Psioniche), Arti Psioniche d6+"
+            }
+        },
+        "Mighty Blow": {
+            "name": "Colpo Poderoso",
+            "description": "<div class=\"swade-core\"><p>Quando ricevi un Jolly come carta azione, raddoppi il totale dei danni inflitti con il primo attacco di Combattere andato a segno.</p></div>",
+            "requirements": {
+                "value": "Protagonista, Principiante, Combattere d8+"
+            }
+        },
+        "Mr. Fix It": {
+            "name": "Riparatutto",
+            "description": "<div class=\"swade-core\"><p>Questo esperto di meccanica aggiunge +2 ai tiri di Riparare. Se ottiene un incremento, i tempi di riparazione sono dimezzati. Se la descrizione di una riparazione specifica già che un incremento dimezza il tempo necessario, questo personaggio la dimezza nuovamente, impiegando quindi solo un quarto del tempo.</p></div>",
+            "requirements": {
+                "value": "Principiante, Riparare d8+"
+            }
+        },
+        "Natural Leader": {
+            "name": "Leader Nato",
+            "description": "<div class=\"swade-core\"><p>Questo condottiero ha dimostrato le proprie capacità sul campo innumerevoli volte, ottenendo così il rispetto di tutti coloro che combattono al suo fianco.</p><p>Gli effetti dei Vantaggi di Leadership che si applicano alle Comparse vengono estesi anche ai Protagonisti.</p></div>",
+            "requirements": {
+                "value": "Navigato, Spirito d8+, Comando"
+            }
+        },
+        "Nerves of Steel": {
+            "name": "Tempra d’Acciaio",
+            "description": "<div class=\"swade-core\"><p>L’eroe riesce a ignorare il dolore più intenso. Puoi ignorare 1 punto di penalità da Ferite.</p></div>",
+            "requirements": {
+                "value": "Principiante, Vigore d8+"
+            }
+        },
+        "New Powers": {
+            "name": "Nuovi Poteri",
+            "description": "<div class=\"swade-core\"><p>Scegliendo questo Vantaggio apprendi due nuovi poteri, di Rango pari o inferiore a quello del personaggio, tra quelli disponibili per il tuo Background Arcano. Nuovo Potere può essere acquisito più volte.</p><p>Invece di apprendere un nuovo potere, se lo desideri puoi aggiungere un nuovo Aspetto a un potere che possiedi già. Per esempio, puoi aggiungere un Aspetto di ghiaccio a un <i>dardo</i> di fuoco che possiedi già, in modo da poter decidere di volta in volta quale dei due Aspetti utilizzare.</p></div>",
+            "requirements": {
+                "value": "Principiante, Background Arcano (Qualsiasi)"
+            }
+        },
+        "No Mercy": {
+            "name": "Senza Pietà",
+            "description": "<div class=\"swade-core\"><p>Quando spendi un Benny per ritirare i danni, aggiungi +2 al totale.</p></div>",
+            "requirements": {
+                "value": "Navigato"
+            }
+        },
+        "Power Points": {
+            "name": "Punti Potere",
+            "description": "<div class=\"swade-core\"><p>Stregoni, scienziati pazzi e ogni altro genere di personaggi arcani desiderano sempre accrescere il proprio potere. Questo Vantaggio conferisce 5 Punti Potere aggiuntivi.</p><p>Questo Vantaggio può essere acquisito più volte, ma solo una volta per Rango. Raggiunto il Rango Leggendario, tale limite decade, ma i Punti Potere ottenuti sono solo 2.</p></div>",
+            "requirements": {
+                "value": "Principiante, Background Arcano (Qualsiasi)"
+            }
+        },
+        "Power Surge": {
+            "name": "Picco di Energia",
+            "description": "<div class=\"swade-core\"><p>Quando ricevi un Jolly in combattimento, recuperi 10 Punti Potere. Non puoi comunque eccedere il tuo totale massimo.</p></div>",
+            "requirements": {
+                "value": "Protagonista, Principiante, Background Arcano (Qualsiasi), abilità arcana d8+"
+            }
+        },
+        "Professional": {
+            "name": "Professionista",
+            "description": "<p>Il personaggio è un esperto in un particolare attributo o abilità (a tua scelta). Il Tratto e il relativo limite massimo aumentano di uno: d12 diventa d12 + 1, oppure d12 + 1 diventa d12 + 2.</p><p>Questo Vantaggio può essere acquisito una sola volta per ciascun Tratto.</p>",
+            "requirements": {
+                "value": "Leggendario, dado massimo nel Tratto specifico"
+            }
+        },
+        "Provoke": {
+            "name": "Istigare",
+            "description": "<div class=\"swade-core\"><p>I personaggi più scaltri sanno come manipolare i nemici, attirandone l'attenzione in modo che ignorino i loro alleati o altri innocenti che è meglio proteggere. Una volta per round, se ottieni un incremento in un Test di Provocare (vedi Test a pag. 138), puoi scegliere di rendere il bersaglio Istigato.</p><p>Oltre alle consuete conseguenze del Test, un nemico Istigato subisce una penalità di -2 a qualunque azione rivolta a bersagli differenti dal personaggio che lo ha Istigato.</p><p>Questo effetto è cumulativo con Distratto, ma non con ulteriori effetti di Istigare, e dura fino a che qualcuno non riceve un Jolly, o la vittima non viene Istigata da qualcun altro, o l'incontro termina.</p><p>Istigare può avere effetto su più bersagli contemporaneamente e può essere combinato con Agitatore (pag. 62).</p></div>",
+            "requirements": {
+                "value": "Principiante, Provocare d6+"
+            }
+        },
+        "Quick": {
+            "name": "Veloce",
+            "description": "<div class=\"swade-core\"><p>I personaggi Veloci sono dotati di sangue freddo e riflessi fulminei. In combattimento, quando come carta azione ricevi un Cinque o meno, puoi scartarlo e pescare di nuovo, fino a che non ottieni una carta superiore al Cinque.</p><p>I personaggi con Veloce e Nervi Saldi per prima cosa pescano due carte e scelgono quale tenere, poi se questa è inferiore a Sei possono continuare a pescare fino a ottenere un Sei o più.</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+"
+            }
+        },
+        "Rabble-Rouser": {
+            "name": "Agitatore",
+            "description": "<p>Insultare o umiliare un rivale può anche essere divertente, ma far sudare freddo un intero gruppo può essere una vera mossa tattica.</p><p>Una volta per round, il personaggio può indirizzare un Test di Provocare o Intimidire contro tutti i nemici all'interno di un MEM. I bersagli devono essere in grado di vedere e sentire chiaramente il personaggio, e ognuno dei nemici tira separatamente per resistere al Test.</p>",
+            "requirements": {
+                "value": "Navigato, Spirito d8+"
+            }
+        },
+        "Rapid Fire": {
+            "name": "Fuoco Rapido",
+            "description": "<div class=\"swade-core\"><p>L’eroe è capace di sparare in modo rapido ma accurato. Quando utilizza un’arma a distanza in grado di fare fuoco rapidamente (per esempio un revolver o una semiautomatica), e finché ha colpi a sufficienza, può aumentare di 1 la Cadenza di Tiro per un singolo attacco di Sparare per round.</p></div>",
+            "requirements": {
+                "value": "Navigato, Sparare d6+"
+            }
+        },
+        "Rapid Recharge": {
+            "name": "Ricarica Rapida",
+            "description": "<div class=\"swade-core\"><p>I Punti Potere di norma si ricaricano a un ritmo di 5 per ogni ora di riposo (vedi <b>Recupero</b> a pag. 130). Questo Vantaggio raddoppia il ritmo di ricarica portandolo a 10 punti ogni ora di riposo.</p></div>",
+            "requirements": {
+                "value": "Navigato, Spirito d6+, Background Arcano (Qualsiasi)"
+            }
+        },
+        "Reliable": {
+            "name": "Affidabile",
+            "description": "<div class=\"swade-core\"><p>Tutti sanno di poter contare sul tuo personaggio quando hanno bisogno di aiuto. Puoi ripetere gratuitamente un tiro di Supporto (di qualunque tipo).</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        },
+        "Retort": {
+            "name": "Controbattere",
+            "description": "<div class=\"swade-core\"><p>Per alcuni, lo scontro verbale è un'arte non dissimile dalla scherma, e questo personaggio può definirsi un duellante esperto, pronto a punire chi osi sfidarlo.</p><p>Se ottieni un incremento quando resisti a Intimidire o Provocare, il tuo nemico diventa Distratto.</p></div>",
+            "requirements": {
+                "value": "Principiante, Provocare d6+"
+            }
+        },
+        "Rich": {
+            "name": "Ricco",
+            "description": "<div class=\"swade-core\"><p>Che sia il rampollo di una famiglia facoltosa o si sia stato artefice del proprio successo economico, il personaggio possiede molto denaro. Gli eroi Ricchi iniziano il gioco con fondi iniziali triplicati. Se nell’ambientazione ha senso, l’eroe dispone di entrate annuali equivalenti a €150.000 odierni.</p></div>",
+            "requirements": {
+                "value": "Principiante"
+            }
+        },
+        "Rock and Roll!": {
+            "name": "Rock and Roll!",
+            "description": "<div class=\"swade-core\"><p>I tiratori più esperti riescono a compensare il rinculo delle armi automatiche. Se non si muove durante il proprio turno, il personaggio ignora la penalità da Rinculo quando utilizza un’arma con Cadenza di Tiro 2 o superiore (vedi <b>Rinculo</b> a pag. 134).</p></div>",
+            "requirements": {
+                "value": "Navigato, Sparare d8+"
+            }
+        },
+        "Scavenger": {
+            "name": "Riciclatore",
+            "description": "<div class=\"swade-core\"><p>Una volta per scena o per incontro l'eroe può trovare da qualche parte o ricordarsi improvvisamente di avere con sé un oggetto di equipaggiamento, una manciata di munizioni, o qualche altro oggetto utile.</p><p>Il GM definisce quando cambia la scena o l'incontro e ha l'ultima parola su cosa può trovare il personaggio.</p></div>",
+            "requirements": {
+                "value": "Principiante, Fortuna"
+            }
+        },
+        "Scholar": {
+            "name": "Studioso",
+            "description": "<p>Professori, studenti e amanti del sapere trascorrono molto tempo ad approfondire le proprie conoscenze, fino a diventare veri esperti in determinati campi.</p><p>Scegli una delle seguenti abilità: Battaglia, Conoscenze Accademiche, Occulto, Scienze o un'altra abilità associata all'Intelligenza presente nella vostra ambientazione (purché sia sempre un tipo di conoscenza). Tutti i tiri dell'abilità scelta ottengono un bonus di +2.</p><p>Questo Vantaggio può essere acquisito più volte, associandolo ad abilità differenti.</p>",
+            "requirements": {
+                "value": "Principiante, Ricerca d8+"
+            }
+        },
+        "Sidekick": {
+            "name": "Spalla",
+            "description": "<div class=\"swade-core\"><p>Un eroe che trionfa contro il male più e più volte finisce col diventare un'ispirazione per gli altri, e prima o poi qualche giovane idealista decide di unirsi alla sua causa e seguirne l'esempio.</p><p>L'eroe ottiene una spalla di Rango Principiante. Si tratta di un Protagonista, che all'inizio di ogni sessione riceve due Benny e ottiene esperienza come ogni altro personaggio dei giocatori. Può possedere abilità simili o complementari a quelle dell'eroe. La Spalla è sotto il pieno controllo del giocatore, come qualunque altro Alleato, ma il GM può occasionalmente utilizzarla per causare problemi (potrebbe essere catturato, cacciarsi nei guai di propria iniziativa, ecc). In altre parole: di tanto in tanto questo Vantaggio rischia di trasformarsi in uno Svantaggio!</p><p>Se la Spalla muore, non viene rimpiazzata automaticamente. L'eroe può però acquisire nuovamente questo Vantaggio per ottenerne una nuova. Per fortuna l'eroe può sempre spendere i propri Benny per i tiri della Spalla, come se possedesse il Vantaggio Legame Comune. Affinché sia la Spalla a condividere i propri Benny con l'eroe, invece, questa deve effettivamente acquisire Legame Comune.</p></div>",
+            "requirements": {
+                "value": "Protagonista, Leggendario"
+            }
+        },
+        "Soldier": {
+            "name": "Soldato",
+            "description": "<div class=\"swade-core\"><p>I soldati di professione sono abituati a trasportare carichi pesanti e a sopportare condizioni ambientali ostili. Dopo qualche giorno (a discrezione del GM) si abituano all'equipaggiamento che trasportano e considerano la loro Forza come migliore di un tipo di dado per quel che riguarda l'Ingombro (pag. 83) e la Forza Minima per armi, armature e altro equipaggiamento (pag. 82). Tale effetto è cumulabile con il Vantaggio Massiccio.</p><p>I soldati possono inoltre ritirare gratuitamente i tiri di Vigore per resistere alle condizioni ambientali avverse (vedi Pericoli a pag. 165).</p></div>",
+            "requirements": {
+                "value": "Principiante, Forza d6+, Vigore d6+"
+            }
+        },
+        "Soul Drain": {
+            "name": "Prosciugamento dell'Anima",
+            "description": "<div class=\"swade-core\"><p>Situazioni disperate richiedono decisioni disperate. Prosciugamento dell'Anima consente al personaggio arcano di incanalare la propria energia fisica per alimentare i propri poteri: puoi decidere di subire un livello di Fatica per recuperare fino a 5 Punti Potere. Se vuoi puoi subire due livelli di Fatica e ottenere fino 10 Punti Potere, ma in nessun caso puoi usare Prosciugamento dell'Anima fino a diventare Incapacitato.</p><p>La Fatica causata da questo Vantaggio può essere recuperata solo naturalmente. Il potere <i>sollievo</i> e altre capacità equivalenti non hanno alcun effetto.</p></div>",
+            "requirements": {
+                "value": "Navigato, Background Arcano (Qualsiasi), abilità arcana d10+"
+            }
+        },
+        "Steady Hands": {
+            "name": "Mano Ferma",
+            "description": "<div class=\"swade-core\"><p>Sparare da cavallo o da un veicolo in movimento non è affatto facile, ma il tuo eroe sa come fare e ignora la penalità da <b>Piattaforma Instabile</b> (pag. 117).</p><p>Riduci inoltre da -2 a -1 la penalità per sparare mentre corri (vedi <b>Movimento</b> a pag. 161).</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+"
+            }
+        },
+        "Streetwise": {
+            "name": "Bassifondi",
+            "description": "<div class=\"swade-core\"><p>Chi conosce i Bassifondi sa come contattare il mercato nero, sfuggire alla legge (o al crimine!) locale, mantenere un basso profilo quando è necessario, ottenere armi illegali, ricettare merci rubate, scoprire quale boss sta reclutando manodopera, e altre faccende del genere.</p><p>Aggiungi +2 ai tiri di Intimidire e Persuasione per Contattare Conoscenze (pag. 147) nel mondo della criminalità o con il livello più basso della società.</p><p>Aggiungi inoltre +2 ai tiri di Conoscenze Comuni riguardanti tutte le attività losche o al limite della legalità.</p></div>",
+            "requirements": {
+                "value": "Principiante, Intelligenza d6+"
+            }
+        },
+        "Strong Willed": {
+            "name": "Volontà di Ferro",
+            "description": "<div class=\"swade-core\"><p>La forza di volontà può proteggerti come un'armatura quando qualcuno tenta di sminuirti o farti esitare. Aggiungi +2 ai tiri di Intelligenza o Spirito per resistere a un Test (pag. 138).</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        },
+        "Sweep": {
+            "name": "Spazzata",
+            "description": "<div class=\"swade-core\"><p>Spazzata permette di effettuare un singolo attacco di Combattere a -2 contro tutti i bersagli entro la Portata dell’arma che stai usando (amici e nemici!). Il danno viene risolto separatamente per ciascun bersaglio colpito.</p><p>In un singolo round è possibile effettuare una sola Spazzata e non può essere combinata con Frenesia.</p></div>",
+            "requirements": {
+                "value": "Principiante, Forza d8+, Combattere d8+"
+            }
+        },
+        "Tactician": {
+            "name": "Tattico",
+            "description": "<div class=\"swade-core\"><p>Questo comandante ha un istinto naturale per le tattiche delle piccole unità e riesce spesso a trarre vantaggio dalle situazioni in rapido mutamento.</p><p>L'eroe riceve una carta azione aggiuntiva ogni round di combattimento o di Inseguimento, da tenere separata dalla propria. All'inizio del round può decidere se scartarla o assegnarla a un alleato Comparsa entro il Raggio di Comando. Il giocatore (o Il GM) che riceve la carta può decidere se utilizzare la carta ricevuta in sostituzione della propria carta azione, oppure se scartarla.</p></div>",
+            "requirements": {
+                "value": "Navigato, Intelligenza d8+, Comando, Battaglia d6+"
+            }
+        },
+        "Thief": {
+            "name": "Ladro",
+            "description": "<div class=\"swade-core\"><p>I Ladri sono specializzati in inganni, furti e ruberie e sanno riconoscere e disarmare trappole, arrampicarsi e scassinare serrature.</p><p>Un Ladro sa sfruttare le piccole irregolarità e sporgenze delle pareti per scalare i palazzi più alti e aggiunge +1 ai tiri di Atletica per arrampicarsi in ambienti urbani.</p><p>Allo stesso modo, sa muoversi tra le ombre e le luci delle città per passare inosservato e aggiunge +1 ai tiri di Furtività in ambienti cittadini.</p><p>Per finire, un Ladro che si rispetti conosce un'infinità di trucchetti che gli consentono di aggiungere in qualunque circostanza +1 ai tiri di Arte del Furto.</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+, Arte del Furto d6+, Furtività d6+"
+            }
+        },
+        "Tough As Nails": {
+            "name": "Duro Come il Ferro",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe è un veterano di mille battaglie. Può subire quattro Ferite prima di diventare Incapacitato. La penalità massima da Ferite rimane comunque -3.</p></div>",
+            "requirements": {
+                "value": "Leggendario, Vigore d8+"
+            }
+        },
+        "Tougher Than Nails": {
+            "name": "Più Duro del Ferro",
+            "description": "<div class=\"swade-core\"><p>L'eroe può subire cinque Ferite prima di diventare Incapacitato! La penalità massima da Ferite rimane comunque -3.</p></div>",
+            "requirements": {
+                "value": "Leggendario, Duro Come il Ferro, Vigore d12+"
+            }
+        },
+        "Trademark Weapon": {
+            "name": "Arma Personale",
+            "description": "<div class=\"swade-core\"><p>L’eroe conosce una singola arma come il palmo della propria mano e magari le ha anche dato un nome (Pungolo, Vecchia Betty, Excalibur, ecc). Quando la utilizza ottiene +1 alla Parata e aggiunge +1 ai tiri di Atletica (per lanciare), Combattere o Sparare, a seconda del tipo di arma.</p><p>Questo Vantaggio può essere acquisito più volte, ogni volta per un’arma differente.</p><p>Se l’arma selezionata è perduta, l’eroe può sostituirla con un’altra, ma gli effetti del Vantaggio si attivano solo dopo qualche giorno (o dopo un intervallo di tempo che il GM ritiene appropriato per la storia).</p></div>",
+            "requirements": {
+                "value": "Principiante, abilità relativa all’arma scelta a d8+"
+            }
+        },
+        "Two-Fisted": {
+            "name": "Combattente a Due Mani",
+            "description": "<div class=\"swade-core\"><p>Se il personaggio impiega un’azione per attaccare con un’arma da mischia e un’altra azione per attaccare con un’altra arma brandita con la mano secondaria, la secondo azione non causa la penalità da Azioni Multiple. La penalità da Mano Secondaria (pag. 131) si applica invece comunque, a meno che il personaggio non sia anche Ambidestro.</p><p>Se il personaggio possiede il Vantaggio Un Ferro per Mano, la seconda azione può anche essere un attacco a distanza.</p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+"
+            }
+        },
+        "Two-Gun Kid": {
+            "name": "Un Ferro per Mano",
+            "description": "<div class=\"swade-core\"><p>Questo Vantaggio funziona esattamente come Combattente a Due Mani, ma si applica alle armi a distanza, pertanto consente di effettuare due attacchi a distanza con un’arma per mano senza causare la penalità da Azioni Multiple.</p><p>Se il personaggio possiede il Vantaggio Combattente a Due Mani, la seconda azione può anche essere un attacco di Combattere.</p><p><i>Esempio: Red brandisce una spada in una mano e una pistola nell’altra. Possiede sia Combattente a Due Mani sia Un Ferro per Mano, perciò può impiegare un’azione per sferrare un attacco di Combattere e un’altra per un attacco di Sparare senza causare la penalità da Azioni Multiple.</i></p></div>",
+            "requirements": {
+                "value": "Principiante, Agilità d8+"
+            }
+        },
+        "Very Attractive": {
+            "name": "Molto Attraente",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe è bello da morire. Il bonus a Esibirsi e Persuasione diventa +2.</p></div>",
+            "requirements": {
+                "value": "Principiante, Attraente"
+            }
+        },
+        "Weapon Master": {
+            "name": "Maestro d'Armi",
+            "description": "<div class=\"swade-core\"><p>Ottieni +1 alla Parata e utilizzi il d8 invece del d6 come dado per i danni aggiuntivi per gli attacchi di Combattere. Per beneficiare di tali effetti, il personaggio deve essere armato o possedere capacità o Vantaggi che contano come armi (per esempio Studente di Arti Marziali).</p></div>",
+            "requirements": {
+                "value": "Leggendario, Combattere d12+"
+            }
+        },
+        "Wizard": {
+            "name": "Mago",
+            "description": "<div class=\"swade-core\"><p>La sapienza magica è composta da infinite tradizioni e variazioni, e i maghi più esperti hanno studiato una quantità enorme di tomi, pergamene e rituali misteriosi, che consentono loro di conoscere varianti più o meno utili di molti incantesimi.</p><p>Spendendo 1 Punto Potere in più al momento del lancio, puoi modificare l'Aspetto di un potere. Una palla di fuoco (il potere scarica) può diventare un fulmine globulare, per esempio. Alterare gli Aspetti di un potere può fare la differenza di fronte a un nemico particolarmente resistente o vulnerabile a determinati Aspetti.</p></div>",
+            "requirements": {
+                "value": "Navigato, Background Arcano (Magia), Lanciare Incantesimi d6+"
+            }
+        },
+        "Woodsman": {
+            "name": "Uomo dei Boschi",
+            "description": "<div class=\"swade-core\"><p>Gli uomini dei boschi sono ranger, scout, cacciatori ed esploratori. Si sentono più a casa loro nelle terre selvagge che in mezzo alle città e sanno sopravvivere per mesi in mezzo alla natura.</p><p>Aggiungi +2 a tutti tiri di Sopravvivenza e a quelli di Furtività nelle terre selvagge (non in aree urbane né in rovine, né in luoghi sotterranei).</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d6+, Sopravvivenza d8+"
+            }
+        },
+        "Work The Crowd": {
+            "name": "Coinvolgere Migliorato",
+            "description": "<div class=\"swade-core\"><p>Puoi utilizzare l'effetto di Coinvolgere fino a due volte per turno (con due diverse azioni di Supportare).</p></div>",
+            "requirements": {
+                "value": "Navigato, Coinvolgere"
+            }
+        },
+        "Work The Room": {
+            "name": "Coinvolgere",
+            "description": "<div class=\"swade-core\"><p>Le parole del tuo personaggio non solo ispirano i suoi interlocutori, ma spesso incoraggiano anche gli altri. Una volta per turno, quando effettui un tiro di Supporto con Persuasione o Esibirsi, Coinvolgere ti permette di lanciare un dado in più dell'abilità utilizzata. Tale dado Supporta un altro alleato che sia in grado di vederti o sentirti e si applica alla sua prossima azione, qualunque essa sia.</p></div>",
+            "requirements": {
+                "value": "Principiante, Spirito d8+"
+            }
+        }
+    }
+}

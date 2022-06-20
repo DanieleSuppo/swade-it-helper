@@ -93,6 +93,14 @@ function parseName(value, translations, data, tc) {
 	return value;
 }
 
+function parseDescription(value, translations, data, tc) {
+	let pack = game.babele.packs.find(pack => pack.translated && pack.translations[data.name]);
+	if(pack && pack !== tc) {
+		return pack.translateField("description", data);
+	}
+	return value;
+}
+
 function parseRequirements(value, translations, data, tc){
 	let pack = game.babele.packs.find(pack => pack.translated && pack.translations[data.name]);
 	if(pack && pack !== tc) {
@@ -127,6 +135,9 @@ Hooks.once('init', () => {
 			"translateSkill": (value) => parseSkill(value),
 			"translateName": (value, translations, data, tc) => {
 				return parseName(value, translations, data, tc)
+			},
+			"translateDescription": (value, translations, data, tc) => {
+				return parseDescription(value, translations, data, tc)
 			},
 			"translateRequirements": (value, translations, data, tc) => {
 				return parseRequirements(value, translations, data, tc)

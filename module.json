@@ -1,46 +1,53 @@
 {
-  "name": "swade-it-helper",
-  "title": "SWADE Italian Localization Helper",
-  "description": "A module to help with SWADE translations.",
-  "version": "0.0.13",
-  "system": ["swade"],
-  "minimumCoreVersion" : "0.8.1",
-  "compatibleCoreVersion":"9",
-
-  "dependencies": [
-    {
-      "name": "babele",
-      "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
-      "version": "2.0.7"
-    },
-    {
-      "name": "swade-it",
-      "manifest": "https://gitlab.com/dsuppo/swade-it/raw/master/it-IT/module.json",
-      "version": "1.0.8"
-    }
-  ],
-
-  "author": "dsuppo",
-  "esmodules": ["babele-register.js"],
-  "scripts": ["localize.js", "scripts/utils.js"],
-  "styles": [],
-  "packs": [{
-    "label": "Localize Macros",
-    "name": "localize-macros",
-    "entity": "Macro",
-    "path": "packs/localize-macros.db",
-    "system": "swade",
-    "package": "swade-it-helper"
-  }],
-
-  "languages": [{
-    "lang": "it",
-    "name": "Italian",
-    "path": "it.json"
-  }],
-  "url": "https://github.com/DanieleSuppo/swade-it-helper",
-  "manifest": "https://github.com/DanieleSuppo/swade-it-helper/releases/latest/download/module.json",
-  "download": "https://github.com/DanieleSuppo/swade-it-helper/releases/download/0.0.1/module.zip",
-  "coreTranslation": false
-
+    "name": "swade-it-helper",
+    "title": "SWADE Italian Localization Helper",
+    "description": "A module to help with SWADE translations.",
+    "version": "0.1.0",
+    "system": [
+        "swade"
+    ],
+    "minimumCoreVersion": "0.8.1",
+    "compatibleCoreVersion": "0.8.9",
+    "dependencies": [
+        {
+            "name": "babele",
+            "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
+            "version": "2.0.7"
+        },
+        {
+            "name": "swade-it",
+            "manifest": "https://gitlab.com/dsuppo/swade-it/raw/master/it-IT/module.json",
+            "version": "1.0.8"
+        }
+    ],
+    "author": "dsuppo",
+    "esmodules": [
+        "babele-register.js"
+    ],
+    "scripts": [
+        "localize.js",
+        "scripts/utils.js"
+    ],
+    "styles": [],
+    "packs": [
+        {
+            "label": "Localize Macros",
+            "name": "localize-macros",
+            "entity": "Macro",
+            "path": "packs/localize-macros.db",
+            "system": "swade",
+            "package": "swade-it-helper"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "it",
+            "name": "Italian",
+            "path": "it.json"
+        }
+    ],
+    "url": "https://github.com/DanieleSuppo/swade-it-helper",
+    "manifest": "https://github.com/DanieleSuppo/swade-it-helper/releases/latest/download/module.json",
+    "download": "https://github.com/DanieleSuppo/swade-it-helper/releases/download/0.1.0/module.zip",
+    "coreTranslation": false
 }
