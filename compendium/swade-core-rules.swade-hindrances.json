@@ -1,0 +1,240 @@
+{
+    "label": "SWADE Svantaggi",
+    "mapping": {
+        "cf_name": {
+            "path": "flags.cf.name",
+            "converter": "translateCfName"
+        },
+        "description": "data.description"
+    },
+    "entries": {
+        "All Thumbs": {
+            "name": "Scarsa Manualità",
+            "description": "<div class=\"swade-core\"><p>Esistono individui che, per poca dimestichezza, goffaggine o per semplice sfortuna sono del tutto negati quando si tratta di utilizzare dispositivi meccanici o tecnologici.</p><p>Scarsa Manualità impone un modificatore di -2 ai tiri associati all’uso di dispositivi meccanici o tecnologici. Se ottieni un Fallimento Critico, l’oggetto che stai utilizzando si rompe, a meno che per quel dispositivo non sia già previsto un altro effetto specifico. A discrezione del GM, l’oggetto può essere aggiustato con un tiro di Riparare e 1d6 ore di lavoro.</p></div>"
+        },
+        "Anemic": {
+            "name": "Anemico",
+            "description": "<div class=\"swade-core\"><p>I personaggi anemici sono particolarmente esposti alle malattie, alla fatica e agli effetti ambientali. Tutti i tiri di Vigore per resistere alla Fatica subiscono un modificatore di -2 (vedi Pericoli a pag. 165).</p></div>"
+        },
+        "Arrogant": {
+            "name": "Arrogante",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe è convinto di essere il migliore nel suo campo. Che si tratti di kung fu, pittura o guida, ritiene che pochissimi possano competere con lui e non perde occasione per vantarsene.</p><p>Per una persona del genere, vincere non è sufficiente. Deve umiliare l’avversario e dimostrare la propria superiorità. Uno spadaccino con questo Svantaggio è capace di disarmare l’avversario per poi restituirgli la spada con un sorriso di sfida. In battaglia, un personaggio Arrogante punta dritto al nemico più pericoloso aprendosi la via tra gli altri che si frappongono.</p></div>"
+        },
+        "Bad Eyes": {
+            "name": "Vista Difettosa",
+            "description": "<div class=\"swade-core\"><p>Gli occhi del tuo personaggio non funzionano più bene come una volta. Tutti i tiri sui Tratti dipendenti dalla vista (per esempio i tiri di Percezione e gli attacchi a distanza) subiscono una penalità di -1 se lo Svantaggio è Minore, e di -2 se è Maggiore.</p><p>Nelle ambientazioni in cui sono disponibili gli occhiali, questi sono sufficienti a rimuovere la penalità. Ma se durante un combattimento l’eroe rimane senza (in generale c’è una probabilità del 50% che gli occhiali si rompano ogni volta che il personaggio subisce una Ferita, cade o per altri tipi di traumi violenti), diventa Distratto (e Vulnerabile, se lo Svantaggio è Maggiore) fino alla fine del suo prossimo turno.</p></div>"
+        },
+        "Bad Luck": {
+            "name": "Sfortuna",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe è un po’ meno fortunato degli altri e ottiene un Benny in meno all’inizio di ogni sessione. Non puoi avere Sfortuna se possiedi il Vantaggio Fortuna e viceversa.</p></div>"
+        },
+        "Big Mouth": {
+            "name": "Chiacchierone",
+            "description": "<div class=\"swade-core\"><p>Le bocche spalancate affondano le fregate, dice il proverbio. La bocca del tuo eroe potrebbe affondare una flotta.</p><p>Un personaggio Chiacchierone non è molto bravo a mantenere un segreto. Svela i piani del gruppo e rivela informazioni riservate, di solito nel peggior momento possibile.</p></div>"
+        },
+        "Blind": {
+            "name": "Cieco",
+            "description": "<div class=\"swade-core\"><p>Il personaggio è completamente privo di vista. Tutte le azioni che richiedono la visione subiscono una penalità di -6.</p><p>Per compensare questo Svantaggio particolarmente pesante, i personaggi Ciechi ottengono un Vantaggio gratuito a loro scelta.</p></div>"
+        },
+        "Bloodthirsty": {
+            "name": "Sanguinario",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe non fa prigionieri, a meno che non sia sotto il controllo diretto di un superiore. La sua indole spietata porta i nemici a fare altrettanto, e spesso può comportare la perdita di informazioni vitali, oltre a creare problemi con i superiori o con le autorità, a seconda dell’ambientazione.</p></div>"
+        },
+        "Can't Swim": {
+            "name": "Non Sa Nuotare",
+            "description": "<div class=\"swade-core\"><p>Nel ventunesimo secolo la maggior parte delle persone può imparare a nuotare senza difficoltà, grazie alle piscine e alla facilità con la quale si possono raggiungere laghi o mari. Storicamente, invece, coloro che vivevano lontano dalle coste di solito non ne erano in grado.</p><p>I personaggi con tale Svantaggio subiscono una penalità di -2 ai tiri di Atletica per nuotare e ogni pollice di spostamento in acqua conta per 3. Vedi inoltre Movimento (pag. 117).</p></div>"
+        },
+        "Cautious": {
+            "name": "Cauto",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio sente la necessità di pianificare le proprie azioni con cura e non prende mai decisioni d’impulso.</p></div>"
+        },
+        "Clueless": {
+            "name": "Svampito",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe non presta molta attenzione al mondo intorno a sé e spesso si perde in un bicchier d’acqua: i suoi tiri di Conoscenze Comuni e Percezione subiscono una penalità di -1.</p></div>"
+        },
+        "Clumsy": {
+            "name": "Goffo",
+            "description": "<div class=\"swade-core\"><p>Il personaggio è un pasticcione privo di coordinazione, capace di inciampare nei suoi stessi piedi, e viene scelto sempre per ultimo negli sport. Subisce una penalità di -2 ai tiri di Atletica e Furtività.</p></div>"
+        },
+        "Code of Honor": {
+            "name": "Codice d’Onore",
+            "description": "<div class=\"swade-core\"><p>Per questo personaggio l’onore è molto importante. Mantiene sempre la parola data, rispetta i prigionieri e in generale tenta di agire sempre seguendo una linea di condotta che corrisponde all’idea di gentiluomo o gentildonna tipica del suo mondo.</p></div>"
+        },
+        "Curious": {
+            "name": "Curioso",
+            "description": "<div class=\"swade-core\"><p>La curiosità uccise il gatto, e potrebbe uccidere anche il tuo eroe. I personaggi curiosi devono sempre mettere il naso dappertutto e vogliono sempre sapere cosa si nasconde dietro un potenziale mistero o segreto.</p></div>"
+        },
+        "Death Wish": {
+            "name": "Desiderio di Morte",
+            "description": "<div class=\"swade-core\"><p>Il fatto che il tuo personaggio abbia un Desiderio di Morte non vuol dire che desideri suicidarsi, ma che ritiene la sua vita meno importante di un nobile e probabilmente pericolosissimo obiettivo che si è prefissato.</p><p>I personaggi che nutrono un Desiderio di Morte non gettano via la propria vita senza ragione, ma se si presenta una possibilità di raggiungere il proprio scopo, sono pronti a correre qualsiasi rischio.</p></div>"
+        },
+        "Delusional": {
+            "name": "Fissazioni",
+            "description": "<div class=\"swade-core\"><p>Questo eroe crede in qualcosa che la maggior parte delle persone considera alquanto bizzarra. Le Fissazioni Minori sono innocue, oppure il personaggio riesce a tenerle per sé (il governo mette dei sedativi nelle bibite gassate, i cani parlano, siamo tutti personaggi all’interno di un gioco, ecc).</p><p>Se invece è affetto da Fissazioni Maggiori, il personaggio esprime frequentemente le proprie vedute e a volte le conseguenze non sono piacevoli (il governo è manipolato dagli alieni, gli ospedali uccidono, sono allergico alle armature, gli zombi sono miei amici).</p></div>"
+        },
+        "Doubting Thomas": {
+            "name": "Scettico",
+            "description": "<div class=\"swade-core\"><p>Alcune persone non credono nel sovrannaturale fino a che non si ritrovano tra le fauci di un mostro. Un personaggio Scettico cerca in ogni modo di razionalizzare eventi sovrannaturali, cercando sempre spiegazioni alternative, e spesso si infila in situazioni pericolose perché si rifiuta di considerarle tali.</p><p>Anche quando si trova di fronte a un innegabile fenomeno sovrannaturale, cerca comunque di darne una spiegazione razionale, o al peggio lo riterrà un evento unico, e tornerà a dubitare, come sempre, di ogni altro mistero.</p></div>"
+        },
+        "Driven": {
+            "name": "Obiettivo",
+            "description": "<div class=\"swade-core\"><p>Lo Svantaggio Giuramento indica un impegno preso nei confronti di altri. Un personaggio con un Obiettivo, invece, si è imposto da solo una meta da raggiungere o un obbligo cui ottemperare. Potrebbe voler difendere il regno, diventare un ufficiale pluridecorato, dimostrare di essere il miglior gladiatore di Roma o il miglior pilota di tutta la flotta galattica.</p><p>Un Obiettivo Minore definisce il personaggio e ne guida le decisioni, ma influisce raramente in gioco o non prevede particolari pericoli. Un Obiettivo Maggiore è un desiderio incontenibile, che entra spesso in gioco o che comporta un serio pericolo per il personaggio e per chi gli sta attorno.</p></div>"
+        },
+        "Elderly": {
+            "name": "Anziano",
+            "description": "<div class=\"swade-core\"><p>Il tuo avventuriero è avanti negli anni, ma non è ancora pronto per l’ospizio. Il suo Passo è ridotto di 1 e sottrae 1 dal dado per correre (risultato minimo di 1). Subisce inoltre una penalità di -1 ai tiri di Agilità, Forza e Vigore, ma non alle abilità associate.</p><p>La saggezza degli anni fornisce però all’eroe 5 punti abilità aggiuntivi da spendere in abilità collegate all’Intelligenza.</p></div>"
+        },
+        "Enemy": {
+            "name": "Nemico",
+            "description": "<div class=\"swade-core\"><p>Qualcuno là fuori odia il personaggio e desidera mandarlo in rovina, farlo rinchiudere o vederlo morto. La potenza del nemico e la frequenza con cui può farsi vivo determinano se lo Svantaggio è Maggiore o Minore. Un Nemico Minore potrebbe essere un pistolero solitario in cerca di vendetta, o una fratellanza tradita che però appare raramente. Un Nemico Maggiore potrebbe essere rappresentato da una potente autorità, una banda di fuorilegge, o un singolo rivale pericoloso e spietato.</p><p>Se un giorno il nemico dovesse essere sconfitto, il GM dovrebbe gradualmente introdurre un nuovo antagonista, o in alternativa il giocatore può liberarsi di questo Svantaggio sacrificando un Avanzamento.</p></div>"
+        },
+        "Greedy": {
+            "name": "Avido",
+            "description": "<div class=\"swade-core\"><p>Un personaggio Avido misura il proprio valore sulla base delle ricchezze possedute. Se lo Svantaggio è Minore, discute aspramente sulla divisione di tesori e ricompense. Se è Maggiore, è pronto a litigare per qualsiasi cosa che ritiene ingiusta, e potrebbe arrivare a uccidere pur di ottenere ciò che gli spetta o se desidera qualcosa che non può avere altrimenti.</p></div>"
+        },
+        "Habit": {
+            "name": "Dipendenza",
+            "description": "<div class=\"swade-core\"><p>Il personaggio ha un’abitudine fastidiosa o rischiosa.</p><p>Una Dipendenza Minore può essere irritante, ma non è pericolosa. Magari il tuo eroe si mette le dita nel naso, dice cioè due o tre volte in ogni frase, maneggia continuamente il telefono, o mastica gomma come se non ci fosse un domani. In tutti i casi, è un’abitudine che tende a far allontanare gli altri, se possono.</p><p>Una Dipendenza Maggiore è una dipendenza fisica o psicologica debilitante e potenzialmente letale. Potrebbe trattarsi di alcolismo, consumo di droghe, o persino una dipendenza da realtà virtuale in un’ambientazione con un elevato livello tecnologico. Se privato della propria dose, il personaggio deve superare un tiro di Vigore ogni 24 ore per non subire un livello di Fatica (pag. 130).</p><p>Un tiro di Guarigione, associato a un farmaco adatto, rimuove un livello di Fatica per quattro ore. Dopo tale lasso di tempo la Fatica ritorna e può essere recuperata solo assumendo la sostanza da cui il personaggio è dipendente.</p></div>"
+        },
+        "Hard of Hearing": {
+            "name": "Duro d’Orecchi",
+            "description": "<div class=\"swade-core\"><p>I personaggi che hanno perso in parte o del tutto l’udito possiedono questo Svantaggio. Come Svantaggio Minore, comporta una penalità di -4 ai tiri di Percezione basati sull’udito, inclusi quelli per svegliarsi a causa di forti rumori. La versione Maggiore significa che il personaggio è del tutto sordo, e di conseguenza fallisce automaticamente tutti i suddetti tiri.</p><p>Eventuali dispositivi di supporto all’udito riducono la penalità di 2 punti, ma richiedono batterie e hanno il 50% di probabilità di staccarsi e finire in terra quando il personaggio subisce una Ferita, cade, o per altri traumi fisici.</p></div>"
+        },
+        "Heroic": {
+            "name": "Eroico",
+            "description": "<div class=\"swade-core\"><p>Quest’anima nobile non sa dire di no a una persona in difficoltà. Non è detto che la cosa gli piaccia, ma accorre sempre in soccorso di coloro che non ritiene capaci di cavarsela da soli. È il primo a lanciarsi dentro un edificio in fiamme, a dare la caccia ai mostri anche quando la ricompensa è minima o inesistente, e di solito si lascia commuovere dalle storie lacrimevoli.</p></div>"
+        },
+        "Hesitant": {
+            "name": "Esitante",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe, quando si trova sotto stress, rimane imbambolato. In combattimento, devi pescare due Carte Azione e tenere la più bassa. Se ottieni un Jolly puoi usarlo normalmente e ignorare questo Svantaggio (ed è per questo che è uno Svantaggio Minore: di fatto aumenta le probabilità di ottenere un Jolly!).</p><p>I personaggi Esitanti non possono prendere i Vantaggi Veloce e Nervi Saldi.</p></div>"
+        },
+        "Illiterate": {
+            "name": "Analfabeta",
+            "description": "<div class=\"swade-core\"><p>Il tuo personaggio non sa leggere. Sa scrivere il proprio nome e sa riconoscere un segnale di STOP, ma poco altro. Anche la matematica, se si va oltre 2 + 2, è al di là delle sue possibilità. Comprese le tabelline!</p><p>I personaggi Analfabeti non sanno leggere né scrivere in nessuna lingua, a prescindere da quante ne parlino.</p></div>"
+        },
+        "Impulsive": {
+            "name": "Impulsivo",
+            "description": "<div class=\"swade-core\"><p>Questo scavezzacollo si lancia nell’azione senza riflettere granché. Prima agisce, poi pensa.</p></div>"
+        },
+        "Jealous": {
+            "name": "Invidioso",
+            "description": "<div class=\"swade-core\"><p>L’insicurezza porta questo personaggio a invidiare i successi degli altri o ad essere troppo possessivo verso ciò che ritiene essere di sua proprietà. Spesso si lamenta, mette il broncio, desidera per sé ciò che appartiene ad altri o ne invidia gli encomi, e a volte cerca di prendersene il merito, disobbedisce agli ordini e riesce, con tali comportamenti, a causare numerosi problemi.</p><p>Se lo Svantaggio è Minore, la sua invidia o gelosia si focalizza su un solo oggetto in particolare. Può per esempio trattarsi di un interesse romantico, o della convinzione di essere insuperabile in un particolare ambito, nel quale desidera primeggiare e non tollera di essere messo in ombra.</p><p>Se lo Svantaggio è Maggiore, il personaggio è invidioso di chiunque riesca meglio di lui. Non può fare a meno di sparlarne costantemente, può cercare di metterlo in ombra, fino ad arrivare a tramare per far cadere in disgrazia chiunque minacci il suo ego.</p></div>"
+        },
+        "Loyal": {
+            "name": "Leale",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio è pronto a rischiare la vita per i suoi amici. Alcuni eroi Leali potrebbero anche non sembrare particolarmente virtuosi né coraggiosi, ma sono comunque i primi a lanciarsi in aiuto degli alleati se qualcosa li minaccia.</p></div>"
+        },
+        "Mean": {
+            "name": "Meschino",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio è scorbutico e scontroso. Non riesce a essere gentile e a dare una buona impressione di sé, non ama essere disturbato, è infastidito dalle richieste di favori e non sa neanche come ringraziare quando qualcuno lo ricompensa o gli fa una cortesia. Oltre alle ovvie conseguenze di interpretazione, un personaggio Meschino sottrae -1 da tutti i tiri di Persuasione.</p></div>"
+        },
+        "Mild Mannered": {
+            "name": "Mite",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio non riesce ad apparire minaccioso in nessun modo. Forse ha un timbro di voce delicato, oppure un volto buono, oppure è proprio di indole mite, fatto sta che gli risulta impossibile impressionare gli altri: sottrae -2 da tutti i tiri di Intimidire.</p></div>"
+        },
+        "Mute": {
+            "name": "Muto",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio non può parlare, forse a causa di un trauma o per motivi congeniti. Può comunicare scrivendo, se necessario, oppure usare il linguaggio dei segni o altre forme di comunicazione visive.</p><p>In determinate condizioni, la comunicazione visiva potrebbe richiedere da parte del ricevente un tiro di Percezione (con penalità relative all’Illuminazione, pag. 131).</p></div>"
+        },
+        "Obese": {
+            "name": "Obeso",
+            "description": "<div class=\"swade-core\"><p>I personaggi robusti ma sostanzialmente forti hanno il Vantaggio Massiccio, quelli per i quali la massa corporea è di impedimento sono invece Obesi. Un personaggio non può essere contemporaneamente Massiccio e Obeso. Questo Svantaggio non può aumentare la Taglia del personaggio oltre un valore di 3.</p><p>Questo Svantaggio conferisce +1 alla Taglia (e quindi +1 alla Robustezza), ma il Passo è ridotto di 1 e il dado per correre peggiora di un tipo (minimo d4). La Forza del personaggio deve essere considerata peggiore di un tipo di dado (minimo d4) per quanto concerne le armature e altri equipaggiamenti da indossare (ma non per le armi), e l’eroe potrebbe avere qualche difficoltà a trovare armature e indumenti adatti, nonché a intrufolarsi in spazi angusti.</p></div>"
+        },
+        "Obligation": {
+            "name": "Responsabilità",
+            "description": "<div class=\"swade-core\"><p>L’eroe deve occuparsi di qualcosa o qualcuno quotidianamente o comunque con regolarità. Potrebbe trattarsi di un lavoro, un’attività di volontariato, una famiglia cui badare o simili.</p><p>La Responsabilità impegna il personaggio per circa 20 ore settimanali, o 40 nel caso dello Svantaggio Maggiore. I dettagli specifici devono essere concordati tra giocatore e GM.</p></div>"
+        },
+        "One Arm": {
+            "name": "Un Braccio Solo",
+            "description": "<div class=\"swade-core\"><p>A seguito di una ferita o per una condizione congenita, il tuo eroe si ritrova con un solo braccio. Per fortuna, quello rimasto è quello buono, o lo è diventato. I compiti che richiedono due mani (molte delle azioni risolte con Atletica, o l’uso di armi a due mani) subiscono una penalità di -4.</p></div>"
+        },
+        "One Eye": {
+            "name": "Guercio",
+            "description": "<div class=\"swade-core\"><p>L’eroe ha perso un occhio e di conseguenza ha qualche difficoltà a percepire la profondità. Subisce una penalità di -2 ai tiri sui Tratti per le azioni che si basano sulla vista di qualcosa a più di 5''(10 metri) di distanza.</p></div>"
+        },
+        "Outsider": {
+            "name": "Estraneo",
+            "description": "<div class=\"swade-core\"><p>In una società composta da pochi tipi persone, il tuo personaggio spicca come differente. Un indiano in una città del West, un alieno in un gioco di fantascienza sui marine umani, un mezzorco in un gruppo di elfi, nani e umani sono tutti esempi di personaggi Estranei. È probabile che la gente del posto chieda prezzi più alti, ignori richieste di aiuto, e in generale tratti il personaggio come se appartenesse a una classe inferiore rispetto al resto della società.</p><p>Gli Estranei subiscono -2 ai tiri di Persuasione quando interagiscono con persone diverse dalla loro categoria (o razza). Nella versione Maggiore, essere Estraneo comporta anche avere pochi o nessun diritto legale nell’area principale della campagna. Il personaggio potrebbe essere di una specie differente in una società xenofoba, uno straniero in una cultura crudele e oscurantista o anche un’intelligenza artificiale cui non sono riconosciuti i diritti di un individuo.</p></div>"
+        },
+        "Overconfident": {
+            "name": "Presuntuoso",
+            "description": "<div class=\"swade-core\"><p>Là fuori non c’è nulla che il personaggio non possa sconfiggere, o per lo meno questo è ciò che pensa. È convinto di poter fare praticamente tutto e non indietreggia mai davanti a una sfida. Non è un suicida, ma di certo affronta sfide più grandi di quanto suggerirebbe il buon senso.</p></div>"
+        },
+        "Pacifist": {
+            "name": "Pacifista",
+            "description": "<div class=\"swade-core\"><p>Questo personaggio rifiuta categoricamente la violenza. Il Pacifista Minore combatte solo quando non ha altra scelta e non permette mai che prigionieri o altre vittime indifese vengano uccisi.</p><p>Il Pacifista Maggiore non combatte contro avversari viventi in nessun caso. Può difendersi, ma non farebbe mai nulla che possa arrecare danni permanenti a creature viventi e senzienti. Potrebbe ricorrere a metodi non letali, ma solo per difendersi o per difendere altri.</p><p>Ovviamente anche per un Pacifista Maggiore creature malvagie come non morti, demoni e altri orrori sono degne di essere attaccate e distrutte senza esitazione.</p></div>"
+        },
+        "Phobia": {
+            "name": "Fobia",
+            "description": "<div class=\"swade-core\"><p>Una fobia è una paura irrazionale che perseguita la psiche dell’eroe.</p><p>Quando il personaggio si imbatte nell’oggetto della sua paura (di solito vedendola) subisce -1 a tutti i tiri sui Tratti, o -2 se la Fobia è Maggiore.</p><p>Le Fobie non dovrebbero essere troppo ovvie: avere paura dei vampiri, per esempio, non è una fobia ma puro buon senso! Le fobie di solito si concentrano su elementi casuali che la mente associa a qualcos’altro. Le fobie sono paure irrazionali.</p></div>"
+        },
+        "Poverty": {
+            "name": "Povero",
+            "description": "<div class=\"swade-core\"><p>Si dice che uno sciocco e il suo denaro non restino mai a lungo insieme. Il tuo eroe è quel tipo di sciocco. Inizia il gioco con metà dei fondi iniziali previsti per l’ambientazione e sembra non essere in grado di tenersi in tasca il denaro che ottiene: ogni settimana di gioco i suoi fondi si dimezzano.</p></div>"
+        },
+        "Quirk": {
+            "name": "Eccentrico",
+            "description": "<div class=\"swade-core\"><p>L’eroe ha qualche tipo di mania che di solito è divertente ma che può anche causare qualche problema. Uno spadaccino potrebbe avere la fissazione di incidere le sue iniziali sui vestiti dell’avversario, un nano potrebbe vantarsi continuamente della superiorità della sua cultura, e una debuttante snob potrebbe rifiutarsi di mangiare, bere o socializzare con le classi inferiori.</p></div>"
+        },
+        "Ruthless": {
+            "name": "Implacabile",
+            "description": "<div class=\"swade-core\"><p>L’eroe è animato da una determinazione implacabile ed è pronto a tutto pur di raggiungere i propri scopi. Nella versione Maggiore, il personaggio è pronto a sacrificare l’incolumità di chiunque si frapponga tra lui e il suo obiettivo. Nella versione Minore, evita di causare danni fisici ad altri, a meno che non si oppongano apertamente ai suoi piani.</p></div>"
+        },
+        "Secret": {
+            "name": "Segreto",
+            "description": "<div class=\"swade-core\"><p>Il personaggio nasconde un segreto che potrebbe mettere in pericolo lui stesso o altre persone. Come Svantaggio Minore, le conseguenze del segreto sono problematiche ma non rappresentano una minaccia mortale.</p><p>Nella versione Maggiore, la divulgazione del segreto comporta invece conseguenze gravi. Se il segreto viene rivelato, questo Svantaggio dovrebbe trasformarsi in Nemico, Ricercato, Vergogna o un qualunque altro Svantaggio appropriato alla situazione, in accordo con il GM.</p></div>"
+        },
+        "Shamed": {
+            "name": "Vergogna",
+            "description": "<div class=\"swade-core\"><p>Un evento passato tormenta il personaggio. Forse ha infranto un giuramento, oppure dopo essere stato sconfitto in un duello onorevole ha fatto uccidere il suo avversario perché riteneva che il fine giustificasse tale bassezza. Forse, pur non essendo un codardo, è fuggito dal campo di battaglia abbandonando i suoi compagni al loro destino.</p><p>Come Svantaggio Minore, l’evento di cui si vergogna non è di pubblico dominio, ma tormenta i suoi ricordi e lo rende pronto a tutto pur di non ripetere lo stesso errore oppure, al contrario, in circostanze simili potrebbe non riuscire a evitarlo, e poi odiarsi ancor di più.</p><p>Come Svantaggio Maggiore, l’evento è ben noto, almeno alle persone a cui l’eroe tiene di più. I personaggi degli altri giocatori dovrebbero esserne subito informati (anche prima dell’inizio del gioco). Diversamente, possono esserne messi a conoscenza da un Personaggio Non Giocante. Inoltre, l’onta che tormenta il personaggio potrebbe essere utilizzata, occasionalmente, contro di lui: per screditarlo o per metterlo in difficoltà.</p></div>"
+        },
+        "Slow": {
+            "name": "Lento",
+            "description": "<div class=\"swade-core\"><p>Il personaggio è rallentato da una disabilità o una vecchia ferita. Come Svantaggio Minore, il Passo è ridotto di 1 e il dado per correre peggiora di un tipo di dado (se è già il d4, diventa d4-1). Come Svantaggio Maggiore, il Passo è ridotto di 2, il dado per correre peggiora di un tipo di dado, e tutti i tiri di Atletica e per resistere a tiri contrapposti di Atletica subiscono una penalità di -2 inclusi i Test e le Prese di Lotta. I personaggi Lenti non possono prendere il Vantaggio Pieveloce.</p><p><b>Protesi</b>: La versione Minore può rappresentare un personaggio che utilizza una protesi. Se quest’ultima è persa o distrutta, si applicano gli effetti della versione Maggiore.</p><p><b>Sedia a Rotelle</b>: Dall’era vittoriana in poi, grosso modo, i personaggi possono iniziare il gioco con una sedia a rotelle manuale (senza doverla acquistare). In epoca moderna (dal 1980 in poi), il personaggio può scegliere tra sedia manuale, ultraleggera o a motore.</p><p><ul><li><b>MANUALE</b>: Il Passo è pari a metà del dado di Atletica (fino a un massimo di 3) e il personaggio non può correre.</li><li><b>ULTRALEGGERA</b>: Il Passo è pari a metà del dado di Atletica. Il personaggio può correre di d4 (Svantaggio Minore) o d4-1 (Svantaggio Maggiore).</li><li><b>A MOTORE</b>: Il Passo è 6 su superfici lisce e piatte, e 3 su superfici sconnesse. Non può correre. La maggior parte delle sedie a motore può spostarsi per circa 15 chilometri prima di dover essere ricaricata.</li></ul></p></div>"
+        },
+        "Small": {
+            "name": "Piccolo",
+            "description": "<div class=\"swade-core\"><p>Rispetto a un umano medio, questo avventuriero è molto magro, molto basso, o entrambe le cose. Ottiene -1 alla Taglia (vedi pag. 137) e di conseguenza -1 alla Robustezza. La Taglia non può diminuire oltre -1, ma la penalità alla Robustezza viene sempre applicata. Un mezzuomo Piccolo, per esempio, rimane <b>Taglia</b> -1, ma perde comunque un punto di Robustezza.</p></div>"
+        },
+        "Stubborn": {
+            "name": "Ostinato",
+            "description": "<div class=\"swade-core\"><p>Gli individui Ostinati vogliono sempre fare di testa loro e non ammettono mai di avere torto. Anche quando i fatti li smentiscono in maniera evidente, cercano di giustificare i propri errori tramite mezze verità e razionalizzazioni.</p></div>"
+        },
+        "Suspicious": {
+            "name": "Sospettoso",
+            "description": "<div class=\"swade-core\"><p>Il personaggio sospetta di chiunque. Come Svantaggio Minore, l’eroe non si fida di nessuno. Potrebbe richiedere pagamenti anticipati, accettare accordi solo in forma scritta e convincersi che persino i suoi amici stiano tramando per tradirlo.</p><p>Come Svantaggio Maggiore, inoltre, i tiri di <b>Supporto</b> (pag. 137) per aiutare il personaggio Sospettoso subiscono una penalità di -2.</p></div>"
+        },
+        "Thin Skinned": {
+            "name": "Permaloso",
+            "description": "<div class=\"swade-core\"><p>L’eroe è particolarmente suscettibile alle offese. Come Svantaggio Minore, il personaggio subisce -2 ai tiri per resistere agli attacchi di Provocare, e -4 se lo Svantaggio è Maggiore.</p></div>"
+        },
+        "Tongue-Tied": {
+            "name": "Lingua Attorcigliata",
+            "description": "<div class=\"swade-core\"><p>Il tuo avventuriero si impappina anche (e soprattutto!) quando cerca di pronunciare una frase a effetto. Quando cerca di persuadere qualcuno parte per insensate tangenti che gli fanno perdere il filo del discorso e, in generale, ha parecchie difficoltà a comunicare in modo efficace.</p><p>Tutti i tiri di Intimidire, Esibirsi, Persuasione e Provocare che coinvolgano la comunicazione verbale subiscono una penalità di -1.</p></div>"
+        },
+        "Ugly": {
+            "name": "Brutto",
+            "description": "<div class=\"swade-core\"><p>Le persone attraenti hanno la vita facile, è risaputo. Purtroppo non è il caso di questo personaggio, che subisce -1 dai tiri di Persuasione, o -2 se lo Svantaggio è Maggiore.</p></div>"
+        },
+        "Vengeful": {
+            "name": "Vendicativo",
+            "description": "<div class=\"swade-core\"><p>La vendetta è un piatto che va gustato freddo, tiepido, caldo... non importa.</p><p>Come Svantaggio Minore, il personaggio ricerca la vendetta entro i limiti di legge. Il metodo può variare a seconda delle circostanze. Potrebbe architettare piani lunghi ed elaborati, o puntare a un risultato immediato.</p><p>Come Svantaggio Maggiore, la resa dei conti diventa una priorità imprescindibile. Non vuol dire necessariamente che il personaggio faccia ricorso immediatamente alla violenza, ma non si fermerà fino a che il torto subito non sia stato reso.</p></div>"
+        },
+        "Vow": {
+            "name": "Giuramento",
+            "description": "<div class=\"swade-core\"><p>Il personaggio ha prestato un giuramento solenne. Lo Svantaggio è Maggiore o Minore in base a quanto possa essere pericoloso rispettarlo e alla frequenza con la quale il giuramento possa richiedere al personaggio di agire. Un Giuramento Minore potrebbe essere l’appartenenza a un ordine dalle finalità ampie e che non entrano in conflitto con gli obiettivi del gruppo.</p><p>Un Giuramento Maggiore impone impegni frequenti e a lungo termine, e mette in pericolo la vita stessa del personaggio.</p></div>"
+        },
+        "Wanted": {
+            "name": "Ricercato",
+            "description": "<div class=\"swade-core\"><p>Il tuo eroe ha compiuto qualche genere di crimine e se scoperto verrà arrestato. Affinché questo Svantaggio abbia senso, nell’ambientazione devono esistere delle leggi e una forza di polizia con il compito di farle rispettare.</p><p>Il livello dello Svantaggio dipende dalla gravità del crimine commesso e da quanto siano attive le forze dell’ordine. Un eroe con numerose multe per sosta vietata da pagare ha uno Svantaggio Minore, così come qualcuno ricercato per un crimine più serio ma in un luogo lontano dall’area principale della campagna. Essere accusati di omicidio è uno Svantaggio Maggiore in quasi tutte le ambientazioni.</p></div>"
+        },
+        "Yellow": {
+            "name": "Vigliacco",
+            "description": "<div class=\"swade-core\"><p>Non tutti sono dotati di sangue freddo. L’eroe non sopporta la vista del sangue, teme la violenza ed è terrorizzato all’idea di essere ferito. Subisce -2 dai tiri per resistere alla Paura e a Intimidire.</p></div>"
+        },
+        "Young": {
+            "name": "Giovane",
+            "description": "<div class=\"swade-core\"><p>Un eroe Giovane ha tra i 12 e i 15 anni, in termini umani; per razze differenti che seguono uno diverso sviluppo può essere necessario considerare altre fasce d’età. Il personaggio riceve solo 4 punti, invece dei consueti 5, da assegnare agli attributi, e 10 punti invece di 12 per le abilità. Potrebbe inoltre non godere di pieni diritti e autonomia (nel mondo moderno non può, per esempio, acquistare armi da fuoco).</p><p>D’altro canto, gli eroi più giovani hanno spesso la fortuna dalla loro parte: all’inizio di ogni sessione ottengono un Benny in più (cumulabile ai Vantaggi Fortuna e Fortuna Sfacciata).</p><p>I personaggi Giovani dovrebbero inoltre prendere lo Svantaggio Piccolo (ma non sono obbligati a farlo).</p><p>Nella versione Maggiore, il personaggio ha tra gli 8 e gli 11 anni: riceve solo 3 punti per gli attributi e 10 per le abilità, e ottiene lo Svantaggio Piccolo. All’inizio di ogni sessione, però, ottiene 2 Benny aggiuntivi!</p></div>"
+        }
+    }
+}
