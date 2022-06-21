@@ -1,3 +1,34 @@
+const fieldsDict = {
+	'Novice' : 'Novizio',
+	'Seasoned': 'Stagionato',
+	'Veteran': 'Veterano',
+	'Heroic': 'Eroico',
+	'Legendary': 'Leggendario',
+
+	'Special' : 'Speciale',
+	'2 per point of Size change': '2 per 1 incremento di Taglia',
+
+	'Sm' : 'Int',
+	'Sm x2': 'Int x2',
+	'Sm x 2': 'Int x2',
+	'Smarts x5 (Sound); Smarts (Silence)' : 'Int x5 (Suono); Int (Silenzio)',
+	'Touch': 'Tocco',
+	'Cone Template': 'Template a cono',
+	'Self': 'Se stesso',
+
+	'10 minutes' : '10 minuti',
+	'30 Minutes': '30 Minutes',
+	'Instant' : 'Istantaneo',
+	'One hour': '1 ora',
+	'One Hour': '1 ora',
+	'5 (detect), one hour (conceal)': '5 (Arcano rivelato), 1 ora (Arcano celato)',
+	'Instant (Sound); 5 (Silence)': 'Istantaneo (Suono); 5 (Silenzio)',
+	'Instant (slot); 5 (speed)': 'Instant (lentezza); 5 (velocità)',
+	'5 (boost); Instant (lower)': '5 (incrementa); Instant (riduci)',
+	'A brief conversation of about five minutes': 'Una breve conversazione di circa 5 minuti',
+	'Until the end of the victim\'s next turn': 'Fino alla fine del prossimo turno della vittima'
+}
+
 const skillDict = {
 	'Shooting' : 'Sparare',
 	'Fighting' : 'Combattere',
@@ -111,11 +142,22 @@ function parseRequirements(value, translations, data, tc){
 }
 
 function parseCfName(value){
-	if(folderDict[value] !== null) {
+	if(folderDict[value] !== null && folderDict[value] !== undefined) {
 		return folderDict[value];
 	}
 	else {
-		console.log(value);
+		console.log('SWADE IT Missing translation for folder ' + value);
+		return value;
+	}
+}
+
+function parseFields(value){
+
+	if(fieldsDict[value] !== null && fieldsDict[value] !== undefined) {
+		return fieldsDict[value];
+	}
+	else if(!Number.isInteger(value * 1)) {
+		console.log('SWADE IT 3 Missing translation for ' + value);
 		return value;
 	}
 }
@@ -145,6 +187,7 @@ Hooks.once('init', () => {
 			"translateCfName": (value) => {
 				return parseCfName(value)
 			},
+			"translateFields": (value) => parseFields(value),
 			"translateAction": (value, translations, data) => parseAction(value, translations, data),
 		});
 
