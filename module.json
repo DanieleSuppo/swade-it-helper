@@ -1,5 +1,32 @@
 {
     "name": "swade-it-helper",
+    "id": "swade-it-helper",
+    "compatibility": {
+        "minimum": 9,
+        "verified": 9
+    },
+    "relationships": {
+        "systems": [
+            {
+                "id": "swade",
+                "type": "system",
+                "manifest": "https://gitlab.com/peginc/swade/-/releases/v1.1.7/downloads/system.json",
+                "compatibility": {
+                    "verified": "1.1.7"
+                }
+            }
+        ],
+        "requires": [
+            {
+                "id": "babele",
+                "type": "module",
+                "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
+                "compatibility": {
+                    "verified": "2.0.7"
+                }
+            }
+        ]
+    },
     "title": "SWADE Italian Localization Helper",
     "description": "A module to help with SWADE translations.",
     "version": "0.1.0",
@@ -7,7 +34,7 @@
         "swade"
     ],
     "minimumCoreVersion": "0.8.1",
-    "compatibleCoreVersion": "0.8.9",
+    "compatibleCoreVersion": "9",
     "dependencies": [
         {
             "name": "babele",
@@ -34,6 +61,7 @@
             "label": "Localize Macros",
             "name": "localize-macros",
             "entity": "Macro",
+            "type": "Macro",
             "path": "packs/localize-macros.db",
             "system": "swade",
             "package": "swade-it-helper"
