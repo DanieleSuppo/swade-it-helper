@@ -47,7 +47,7 @@
             "version": "1.0.8"
         }
     ],
-    "author": "dsuppo",
+    "authors": [{"name":  "dsuppo"}],
     "esmodules": [
         "babele-register.js"
     ],
@@ -60,7 +60,6 @@
         {
             "label": "Localize Macros",
             "name": "localize-macros",
-            "entity": "Macro",
             "type": "Macro",
             "path": "packs/localize-macros.db",
             "system": "swade",
