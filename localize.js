@@ -341,30 +341,30 @@ class GenerateCompendiumDialogTranslation extends Dialog {
 
             //TODO se armi convertire anche le azioni
             //Usa get / set flag
-            if ((item.data.flags !== undefined
-                    && item.data.flags.loc !== undefined
-                    && item.data.flags.loc.translated)
+            if ((item.flags !== undefined
+                    && item.flags.loc !== undefined
+                    && item.flags.loc.translated)
                 || (
-                    item.data.flags !== undefined
-                    && item.data.flags.babele !== undefined
-                    && item.data.flags.babele.translated === true
+                    item.flags !== undefined
+                    && item.flags.babele !== undefined
+                    && item.flags.babele.translated === true
                 )
             ) {
                 //console.log('item ' + item.name + ' already translated');
                 return null;
             }
             let patchedItem;
-            if (['weapon', 'armor', 'shield', 'gear'].includes(item.data.type)) {
+            if (['weapon', 'armor', 'shield', 'gear'].includes(item.type)) {
                 patchedItem = await translateFromPack(item, ["swade-equipment"]);
-            } else if (item.data.type === "hindrance") {
+            } else if (item.type === "hindrance") {
                 patchedItem = await translateFromPack(item, ["hindrances"]);
-            } else if (item.data.type === "edge") {
+            } else if (item.type === "edge") {
                 patchedItem = await translateFromPack(item, ["edges"]);
-            } else if (item.data.type === "skill") {
+            } else if (item.type === "skill") {
                 patchedItem = await translateFromPack(item, ["skills"], ['description']); //TODO make the skip multilevel
-            } else if (item.data.type === "power") {
+            } else if (item.type === "power") {
                 patchedItem = await translateFromPack(item, ["swade-powers"]);
-            } else if (item.data.type === "ability") {
+            } else if (item.type === "ability") {
                 patchedItem = await translateFromPack(item, ["swade-specialabilities"]);
             }
             return patchedItem;
@@ -491,7 +491,7 @@ async function translateFromPack(item, packs, skip = []) {
 
     const missingTranslationPack = game.packs.get("world.missing-translations-" + itemType);
     if(missingTranslationPack) {
-        const hash = CryptUtil.md5(item.name + item.type + item.data.data.description);
+        const hash = CryptUtil.md5(item.name + item.type + item.system.description);
         //do something
         let foundItem = (await missingTranslationPack.getDocuments()).find(el => (el.name === item.name && el.type === item.type));
         //Search the item here

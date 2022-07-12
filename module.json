@@ -2,8 +2,8 @@
     "name": "swade-it-helper",
     "id": "swade-it-helper",
     "compatibility": {
-        "minimum": 9,
-        "verified": 9
+        "minimum": 10,
+        "verified": 10
     },
     "relationships": {
         "systems": [
@@ -33,8 +33,8 @@
     "system": [
         "swade"
     ],
-    "minimumCoreVersion": "0.8.1",
-    "compatibleCoreVersion": "9",
+    "minimumCoreVersion": "10",
+    "compatibleCoreVersion": "10",
     "dependencies": [
         {
             "name": "babele",
