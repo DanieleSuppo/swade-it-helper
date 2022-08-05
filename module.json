@@ -37,12 +37,12 @@
     "compatibleCoreVersion": "10",
     "dependencies": [
         {
-            "name": "babele",
+            "id": "babele",
             "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
             "version": "2.0.7"
         },
         {
-            "name": "swade-it",
+            "id": "swade-it",
             "manifest": "https://gitlab.com/dsuppo/swade-it/raw/master/it-IT/module.json",
             "version": "1.0.8"
         }
