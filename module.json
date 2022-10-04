@@ -24,6 +24,14 @@
                 "compatibility": {
                     "verified": "2.0.7"
                 }
+            },
+            {
+                "id": "swade-it",
+                "type": "module",
+                "manifest": "https://github.com/DanieleSuppo/swade-it/releases/latest/download/module.json",
+                "compatibility": {
+                    "verified": "1.1.11"
+                }
             }
         ]
     },
@@ -43,8 +51,8 @@
         },
         {
             "id": "swade-it",
-            "manifest": "https://gitlab.com/dsuppo/swade-it/raw/master/it-IT/module.json",
-            "version": "1.0.8"
+            "manifest": "https://github.com/DanieleSuppo/swade-it/releases/latest/download/module.json",
+            "version": "1.1.11"
         }
     ],
     "authors": [{"name":  "dsuppo"}],
