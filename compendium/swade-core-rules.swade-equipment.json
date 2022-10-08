@@ -2,10 +2,10 @@
 	"label": "SWADE Equipaggiamento",
 	"mapping": {
 		"skill":  {
-			"path": "data.actions.skill", "converter": "translateSkill"
+			"path": "system.actions.skill", "converter": "translateSkill"
 		},
 		"actions": {
-			"path": "data.actions.additional",
+			"path": "system.actions.additional",
 			"converter": "translateAction"
 		},
 		"cf_name": {

@@ -108,7 +108,7 @@ function parseAction(value, translations, data){
 			if (actionDict[toSearch] !== undefined) {
 				value[prop].name = actionDict[toSearch];
 			} else {
-				console.log(value[prop].name + " not found for " + data.name + ", please add to actionDict");
+				console.log(value[prop].name + " not found for " + system.name + ", please add to actionDict");
 			}
 		}
 	}

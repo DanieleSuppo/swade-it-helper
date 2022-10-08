@@ -5,7 +5,7 @@
             "path": "flags.cf.name",
             "converter": "translateCfName"
         },
-        "description": "data.description"
+        "description": "system.description"
     },
     "entries":{
         "Academics":{

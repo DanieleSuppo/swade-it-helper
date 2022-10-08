@@ -6,14 +6,14 @@
             "converter": "translateName"
         },
         "requirements": {
-            "path": "data.requirements",
+            "path": "system.requirements",
             "converter": "translateRequirements"
         },
         "cf_name": {
             "path": "flags.cf.name",
             "converter": "translateCfName"
         },
-        "description": "data.description"
+        "description": "system.description"
     },
     "entries": {
         "Ace": {

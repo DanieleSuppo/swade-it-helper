@@ -1,26 +1,26 @@
 {
 	"label": "SWADE Poteri",
 	"mapping": {
-		"description":  "data.description",
-		"trapping":"data.trapping",
+		"description":  "system.description",
+		"trapping":"system.trapping",
 		"cf_name": {
 			"path": "flags.cf.name",
 			"converter": "translateCfName"
 		},
 		"rank": {
-			"path": "data.rank",
+			"path": "system.rank",
 			"converter": "translateFields"
 		},
 		"pp": {
-			"path": "data.pp",
+			"path": "system.pp",
 			"converter": "translateFields"
 		},
 		"range": {
-			"path": "data.range",
+			"path": "system.range",
 			"converter": "translateFields"
 		},
 		"duration": {
-			"path": "data.duration",
+			"path": "system.duration",
 			"converter": "translateFields"
 		}
 	},
