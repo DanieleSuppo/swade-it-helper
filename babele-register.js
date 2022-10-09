@@ -98,7 +98,7 @@ function parseSkill(value){
 }
 
 function parseAction(value, translations, data){
-	if (isObjectEmpty(value)) {
+	if (isEmpty(value)) {
 		return value;
 	}
 	let toSearch;
@@ -108,7 +108,7 @@ function parseAction(value, translations, data){
 			if (actionDict[toSearch] !== undefined) {
 				value[prop].name = actionDict[toSearch];
 			} else {
-				console.log(value[prop].name + " not found for " + system.name + ", please add to actionDict");
+				console.log(value[prop].name + " not found for " + data.name + ", please add to actionDict");
 			}
 		}
 	}
@@ -135,7 +135,6 @@ function parseDescription(value, translations, data, tc) {
 function parseRequirements(value, translations, data, tc){
 	let pack = game.babele.packs.find(pack => pack.translated && pack.translations[data.name]);
 	if(pack && pack !== tc) {
-		console.log(pack);
 		return pack.translateField("requirements", data);
 	}
 	return value;
