@@ -35,7 +35,8 @@ const skillDict = {
 	'Piloting' : 'Pilotare',
 	'Riding' : 'Cavalcare',
 	'Boating' : 'Navigare',
-	'Driving' : 'Guidare'
+	'Driving' : 'Guidare',
+	'Athletics': 'Atletica'
 }
 
 const folderDict = {
@@ -87,10 +88,11 @@ const actionDict = {
 	'Athletics (throwing)' : 'Atletica (lanciare)',
 	'Fighting' : 'Combattere',
 	'Bash' : 'Sfondare',
+	'Throw': 'Lancia'
 }
 
 function parseSkill(value){
-	if(skillDict[value] !== null) {
+	if(skillDict[value] !== null && skillDict[value] !== undefined ) {
 		return skillDict[value];
 	}
 	console.log(value + " not found, please add to skillDict");
@@ -102,6 +104,7 @@ function parseAction(value, translations, data){
 		return value;
 	}
 	let toSearch;
+	let toSearch2;
 	for (const prop in value) {
 		if (value.hasOwnProperty(prop)) {
 			toSearch = value[prop].name;
@@ -110,6 +113,13 @@ function parseAction(value, translations, data){
 			} else {
 				console.log(value[prop].name + " not found for " + data.name + ", please add to actionDict");
 			}
+			toSearch2 = value[prop].skillOverride;
+			if (actionDict[toSearch2] !== undefined) {
+				value[prop].skillOverride = actionDict[toSearch2];
+			} else {
+				console.log(value[prop].skillOverride + " not found for " + data.name + ", please add to actionDict");
+			}
+			//skillOverride
 		}
 	}
 
