@@ -88,7 +88,8 @@ const actionDict = {
 	'Athletics (throwing)' : 'Atletica (lanciare)',
 	'Fighting' : 'Combattere',
 	'Bash' : 'Sfondare',
-	'Throw': 'Lancia'
+	'Throw': 'Lancia',
+	'Shooting': 'Sparare'
 }
 
 function parseSkill(value){
@@ -114,10 +115,10 @@ function parseAction(value, translations, data){
 				console.log(value[prop].name + " not found for " + data.name + ", please add to actionDict");
 			}
 			toSearch2 = value[prop].skillOverride;
-			if (actionDict[toSearch2] !== undefined) {
-				value[prop].skillOverride = actionDict[toSearch2];
+			if (!isEmpty(toSearch2) && skillDict[toSearch2] !== undefined) {
+				value[prop].skillOverride = skillDict[toSearch2];
 			} else {
-				console.log(value[prop].skillOverride + " not found for " + data.name + ", please add to actionDict");
+				console.log(value[prop].skillOverride + " not found for " + data.name + ", please add to skillDict");
 			}
 			//skillOverride
 		}
