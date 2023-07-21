@@ -3,16 +3,16 @@
     "id": "swade-it-helper",
     "compatibility": {
         "minimum": 10,
-        "verified": 10
+        "verified": 11
     },
     "relationships": {
         "systems": [
             {
                 "id": "swade",
                 "type": "system",
-                "manifest": "https://gitlab.com/peginc/swade/-/releases/v1.1.7/downloads/system.json",
+                "manifest": "https://gitlab.com/peginc/swade/-/releases/v3.0.5/downloads/system.json",
                 "compatibility": {
-                    "verified": "1.1.7"
+                    "verified": "3.0.5"
                 }
             }
         ],
@@ -22,7 +22,7 @@
                 "type": "module",
                 "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
                 "compatibility": {
-                    "verified": "2.0.7"
+                    "verified": "2.4.0"
                 }
             },
             {
@@ -30,7 +30,7 @@
                 "type": "module",
                 "manifest": "https://github.com/DanieleSuppo/swade-it/releases/latest/download/module.json",
                 "compatibility": {
-                    "verified": "1.1.11"
+                    "verified": "1.1.15"
                 }
             }
         ]
@@ -42,7 +42,7 @@
         "swade"
     ],
     "minimumCoreVersion": "10",
-    "compatibleCoreVersion": "10",
+    "compatibleCoreVersion": "11",
     "dependencies": [
         {
             "id": "babele",
@@ -55,7 +55,11 @@
             "version": "1.1.11"
         }
     ],
-    "authors": [{"name":  "dsuppo"}],
+    "authors": [
+        {
+            "name": "dsuppo"
+        }
+    ],
     "esmodules": [
         "babele-register.js"
     ],
