@@ -1,10 +1,5 @@
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FDanieleSuppo%2Fswade-it-helper%2Freleases%2Flatest%2Fdownload%2Fmodule.json&query=%24.compatibility.verified&prefix=v&label=Foundry&color=passed)
-
 ![Module Version](https://img.shields.io/github/v/release/DanieleSuppo/swade-it-helper?color=blue)
-
-<!--- Downloads @ Latest Badge -->
-<!--- replace <user>/<repo> with your username/repository -->
-
 ![Latest Release Download Count](https://img.shields.io/github/downloads/DanieleSuppo/swade-it-helper/latest/module.zip)
 
 <!--- Forge Bazaar Install % Badge -->
@@ -12,7 +7,6 @@
 <!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
 
 ![Core Version](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fversion%3Fstyle%3Dflat%26url%3Dhttps%3A%2F%2Fgithub.com%2FDanieleSuppo%2Fswade-it-helper%2Freleases%2Flatest%2Fdownload%2Fmodule.json)
-
 ![System](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fsystem%3FnameType%3Dfoundry%26showVersion%3D1%26url%3Dhttps%3A%2F%2Fgithub.com%2FDanieleSuppo%2Fswade-it-helper%2Freleases%2Flatest%2Fdownload%2Fmodule.json)
 
 # How to use this Template to create a versioned Release
