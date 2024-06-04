@@ -38,9 +38,6 @@
     "title": "SWADE Italian Localization Helper",
     "description": "A module to help with SWADE translations.",
     "version": "0.1.0",
-    "system": [
-        "swade"
-    ],
     "minimumCoreVersion": "10",
     "compatibleCoreVersion": "11",
     "dependencies": [
