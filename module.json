@@ -1,9 +1,8 @@
 {
-    "name": "swade-it-helper",
     "id": "swade-it-helper",
     "compatibility": {
         "minimum": 10,
-        "verified": 12
+        "verified": 13
     },
     "relationships": {
         "systems": [
@@ -30,7 +29,7 @@
                 "type": "module",
                 "manifest": "https://github.com/DanieleSuppo/swade-it/releases/latest/download/module.json",
                 "compatibility": {
-                    "verified": "1.1.15"
+                    "verified": "1.4"
                 }
             }
         ]
@@ -38,20 +37,6 @@
     "title": "SWADE Italian Localization Helper",
     "description": "A module to help with SWADE translations.",
     "version": "0.1.0",
-    "minimumCoreVersion": "10",
-    "compatibleCoreVersion": "11",
-    "dependencies": [
-        {
-            "id": "babele",
-            "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
-            "version": "2.0.7"
-        },
-        {
-            "id": "swade-it",
-            "manifest": "https://github.com/DanieleSuppo/swade-it/releases/latest/download/module.json",
-            "version": "1.1.11"
-        }
-    ],
     "authors": [
         {
             "name": "dsuppo"
